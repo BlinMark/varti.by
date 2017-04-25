@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import migrations, models
+import blog.models
 
 
 class Migration(migrations.Migration):
@@ -11,7 +12,9 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.DeleteModel(
-            name='Order',
+        migrations.AddField(
+            model_name='order',
+            name='product_product',
+            field=models.CharField(verbose_name='Товар', max_length=100, default=blog.models.Product),
         ),
     ]

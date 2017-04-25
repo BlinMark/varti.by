@@ -10,10 +10,8 @@ class Post(models.Model):
     title = models.CharField(max_length=200, verbose_name="Название")
     # text = models.TextField()
     text = RichTextUploadingField(config_name='default')  # текстовый редактор
-    created_date = models.DateTimeField(
-        default=timezone.now)
-    published_date = models.DateTimeField(
-        blank=True, null=True)
+    created_date = models.DateTimeField(default=timezone.now)
+    published_date = models.DateTimeField(blank=True, null=True)
 
     class Meta:
         ordering = ['title']
@@ -95,10 +93,12 @@ class Product(models.Model):
 
 
 class Order(models.Model):
-    name = models.CharField(max_length=20, verbose_name="Имя")
-    sername = models.CharField(max_length=20, verbose_name='Фамилия')
-    phone = models.IntegerField(verbose_name='Телефон')
-    email = models.EmailField(max_length=30, verbose_name='E-mail')
+    product = models.CharField(max_length=100, verbose_name='Товар', blank=True, null=True)
+    name = models.CharField(max_length=20, verbose_name="Имя", blank=True, null=True)
+    sername = models.CharField(max_length=20, verbose_name='Фамилия', blank=True, null=True)
+    phone = models.PositiveIntegerField(verbose_name='Телефон', blank=True, null=True)
+    email = models.EmailField(max_length=30, verbose_name='E-mail', blank=True, null=True)
+
 
     # Формат товара
     picture = 'Картина'

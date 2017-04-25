@@ -7,12 +7,12 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('blog', '0019_auto_20170424_2158'),
+        ('blog', '0018_auto_20170425_1645'),
     ]
 
     operations = [
-        migrations.AlterModelOptions(
-            name='order',
-            options={'verbose_name': 'Заказ', 'verbose_name_plural': 'Заказы'},
+        migrations.RemoveField(
+            model_name='order',
+            name='product_product',
         ),
     ]
