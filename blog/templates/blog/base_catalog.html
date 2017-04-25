@@ -1,0 +1,72 @@
+{% load staticfiles %}
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="{% static 'css/catalog.css' %}">
+  <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+	<link rel="shortcut icon" href="{% static 'images/favicon_blue.png' %}">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+</head>
+<body>
+	<?php include_once("analyticstracking.php") ?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$(window).scroll(function() {
+				if($(this).scrollTop() >= 320) {
+				$('#topNav').addClass('topNav-up');
+				$('#topNav').removeClass('topNav-down');
+				$('#catalogNav').addClass('catalogNav-up');
+				$('#catalogNav').removeClass('catalogNav-down');
+				}
+
+				else{
+				$('#topNav').removeClass('topNav-up');
+				$('#topNav').addClass('topNav-down');
+				$('#catalogNav').removeClass('catalogNav-up');
+				$('#catalogNav').addClass('catalogNav-down');
+				}
+			});
+		});
+	</script>
+<div class="content_section">
+
+	<div id="topNav" class="topNav-down">
+		<a href="{% url 'blog:index' %}" id="logoLeft">
+			<img src="{% static 'images\index\logo111.svg'%}">
+		</a>
+		<div id="topNavBlock">
+			<a href="{% url 'blog:index' %}" class="topNavA">Главная</a>
+			<a href="" class="topNavA navActive">Каталог</a>
+			<a href="{% url 'blog:post_list' %}" class="topNavA">Статьи</a>
+			<a href="{% url 'blog:about' %}" class="topNavA">Кто мы?</a>
+		</div>
+	</div>
+	<div id="catalogNav" class="catalogNav-down">
+		<div id="catalogNavBlock" {% if not category %} class="selected" {% endif %}>
+
+      <a href="{% url "blog:ProductList" %}" class="catalogNavA catalogNavAActive">Все</a>
+      {% for cat in categories %}
+      <a href=""{% if category.slug == cat.slug %} class="selected" {% endif %}></a>
+      <a href="{{ cat.get_absolute_url }}" class="catalogNavA">{{ cat.name }}</a>
+			{% endfor %}
+		</div>
+		<div id="navSearch">
+			<button id="searchButton"></button>
+			<input type="text" id="searchInput" placeholder="Где мой слон?">
+		</div>
+	</div>
+
+
+<div id="catalogItems">
+  {% block content %}{% endblock %}
+</div>
+	<div id="loaderLogo"></div>
+
+	{% block footer %}{% include "blog/footer.html" %}{% endblock %}
+
+	</div>
+</div>
+</body>
+</html>

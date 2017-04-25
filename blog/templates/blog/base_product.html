@@ -1,0 +1,122 @@
+{% load staticfiles %}
+{% load widget_tweaks %}
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="{% static 'css/product.css' %}">
+  <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+	<link rel="shortcut icon" href="{% static 'images/favicon_blue.png' %}">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+</head>
+<body>
+	<?php include_once("analyticstracking.php") ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	$(function(){
+		$(window).scroll(function() {
+			if($(this).scrollTop() >= $('#right').height() - $('#pictureWithPrice').height() - 150) {
+			$('#pictureWithPrice').addClass('stop');
+			$('#pictureWithPrice').removeClass('sticky');
+			}
+
+			else{
+			$('#pictureWithPrice').removeClass('stop');
+			$('#pictureWithPrice').addClass('sticky');
+			}
+		});
+	});
+</script>
+
+
+<div class="content_section">
+
+	<div id="topNav">
+		<a href="{% url 'blog:index' %}" id="logoLeft">
+			<img src="{% static 'images\index\logo111.svg'%}">
+		</a>
+		<div id="topNavBlock">
+			<a href="{% url 'blog:index' %}" class="topNavA">Главная</a>
+			<a href="{% url 'blog:ProductList' %}" class="topNavA">Каталог</a>
+			<a href="{% url 'blog:post_list' %}" class="topNavA">Статьи</a>
+			<a href="{% url 'blog:about' %}" class="topNavA">Кто мы?</a>
+		</div>
+	</div>
+	<div id="left">
+			<div id="pictureWithPrice" class="sticky">
+				<div id="mainPicture">
+					<img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no-image.jpg"%}{% endif %}" class="img-responsive">
+				</div>
+				<p id="picturePrice">{{ product.price }} р.</p>
+			</div>
+	</div>
+
+
+	<div id="right">
+			<p id="authorAndRubric"><a href="#">{{ product.author }}</a>&nbsp;&nbsp;&nbsp; в &nbsp;&nbsp;&nbsp;<a href="{{ product.category.get_absolute_url }}">{{ product.category }}</a></p>
+			<h1 id="PictureName">{{ product.name }}</h1>
+			<p id="year"><span>{{ product.date }}</span></p>
+			<p id="PictureDesc">{{ product.description | safe}}</p>
+
+			<form  action="." method="post" id="pictureDetails">
+				<h2 id="detailsH2">Выберите свою картину</h2>
+				<h2 class="detailsInnerH2">Формат</h2>
+				<div id="formatBlock">
+					{% render_field form.product_format class+="checkoutInput" placeholder="Формат" %}
+				</div>
+				<h2 class="detailsInnerH2">Размер</h2>
+				<div id="sizeBlock">
+					{% render_field form.product_orientation class+="checkoutInput" placeholder="Ориентация" %}
+					{% render_field form.product_size class+="checkoutInput" placeholder="Размер" %}
+
+				</div>
+
+				<h2 class="detailsInnerH2">Способ крепления</h2>
+				<div id="attachBlock">
+					{% render_field form.product_kreplenie class+="checkoutInput" placeholder="Способ крепления" %}
+				</div>
+
+				<h2 class="detailsInnerH2">Личные данные</h2>
+				<div class="inputBlock">
+					{% render_field form.name class+="personalInput" placeholder="Ваше имя" %}
+					<label class="personalLabel" for="name">Ваше имя:</label>
+				</div>
+				<div class="inputBlock">
+					{% render_field form.sername class+="personalInput" placeholder="Ваше Фамилия" %}
+					<label class="personalLabel" for="surname">Ваша фамилия:</label>
+				</div>
+
+				<div class="inputBlock">
+					{% render_field form.phone class+="personalInput" placeholder="+XXX (XX) XXX-XX-XX" %}
+					<label class="personalLabel" for="phone">Контактный телефон:</label>
+				</div>
+
+				<div class="inputBlock">
+					{% render_field form.email class+="personalInput" placeholder="example@varti.by" %}
+					<label class="personalLabel" for="mail">e-mail:</label>
+				</div>
+				<p class="preorderP">Бесплатная доставка по РБ. Скидка 60% по предзаказу</p>
+				<div id="submitButtons">
+					{% csrf_token %}
+					<input type="submit" form="pictureDetails" id="buttonBuy" value="Сделать предзаказ">
+					<label class="submitButtonLabel" for="buttonBuy">
+						Сделать предзаказ
+					</label>
+
+				</div>
+		</form>
+	</div>
+
+
+
+
+
+
+{% block footer %}{% include "blog/footer.html" %}{% endblock %}
+
+</div>
+
+
+</body>
+</html>

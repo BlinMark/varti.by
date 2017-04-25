@@ -1,0 +1,137 @@
+{% load staticfiles %}
+{% load widget_tweaks %}
+
+<html>
+<head>
+	<title>Оформление заказа</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="{% static 'css/checkout.css' %}">
+	<link rel="stylesheet" href="{% static 'css/reset.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link rel="shortcut icon" href="{% static 'images/favicon_blue.png' %}">
+</head>
+<body>
+<script>
+$('#dfjgldfhgkjf').inputmask({"mask": "(999) 999-9999"});
+</script>
+<div class="content_section">
+	<div id="topNav">
+		<a href="{% url 'blog:index' %}" id="logoLeft">
+			<img src="{% static 'images\index\logo111.svg'%}">
+		</a>
+		<div id="topNavBlock">
+			<a href="{% url 'blog:index' %}" class="topNavA">Главная</a>
+			<a href="{% url 'blog:ProductList' %}" class="topNavA">Каталог</a>
+			<a href="{% url 'blog:post_list' %}" class="topNavA">Статьи</a>
+			<a href="{% url 'blog:about' %}" class="topNavA">Кто мы?</a>
+		</div>
+	</div>
+	<div id="left">
+		<form id="pictureDetails" class="order-form" action="." method="post">
+			<div id="personalData">
+				<h2 class="checkoutH2">Личные данные</h2>
+				<div class="inputBlock">
+					{% render_field form.first_name class+="checkoutInput" placeholder="Как к вам обращаться" id="first_name" %}
+					<label class="checkoutLabel" for="first_name">Ваше имя:</label>
+				</div>
+
+				<div class="inputBlock">
+					{% render_field form.phone class+="checkoutInput" placeholder="+XXX (XX) XXX-XX-XX" id="phone" %}
+					<label class="checkoutLabel" for="phone">Контактный телефон</label>
+				</div>
+			</div>
+
+			<div id="address">
+				<div id="address1stLine">
+					<h2 class="checkoutH2">Адрес</h2>
+					<div class="inputBlock">
+						{% render_field form.country class+="checkoutInput" placeholder="Страна" id="country" %}
+						<label class="checkoutLabel" for="country">Страна:</label>
+					</div>
+					<div class="inputBlock">
+						{% render_field form.area class+="checkoutInput" placeholder="Область" id="area" %}
+						<label class="checkoutLabel" for="area">Область:</label>
+					</div>
+					<div class="inputBlock">
+						{% render_field form.city class+="checkoutInput" placeholder="Город" id="city" %}
+						<label class="checkoutLabel" for="city">Город:</label>
+					</div>
+				</div>
+				<div id="address2ndLine">
+					<div class="inputBlock">
+						{% render_field form.street class+="checkoutInput" placeholder="Улица" id="street" %}
+						<label class="checkoutLabel" for="street">Улица:</label>
+					</div>
+					<div class="inputBlock">
+						{% render_field form.home class+="checkoutInput" placeholder="Дом" id="home" %}
+						<label class="checkoutLabel" for="home">Дом:</label>
+					</div>
+					<div class="inputBlock">
+						{% render_field form.korpus class+="checkoutInput" placeholder="Корпус" id="korpus" %}
+						<label class="checkoutLabel" for="korpus">Корпус:</label>
+					</div>
+					<div class="inputBlock">
+						{% render_field form.flat class+="checkoutInput" placeholder="Квартира" id="flat" %}
+						<label class="checkoutLabel" for="flat">Квартира:</label>
+					</div>
+				</div>
+				<div class="inputBlock">
+					{% render_field form.size class+="checkoutInput" placeholder="Размер" id="size" %}
+				</div>
+				{% csrf_token %}
+				<input type="submit" form="pictureDetails" id="preorderButton" value="Сделать предзаказ">
+				<label id="preorderButtonLabel" for="preorderButton">
+					Сделать предзаказ
+				</label>
+				<p id="preorderDesc">Мы свяжемся с Вами, когда Ваш заказ будет готов к отправке.</p>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div id="right">
+	{% for item in cart %}
+	{% with product=item.product %}
+	<div class="orderBlock">
+		<div id="orderImg1" class="orderImg">
+			<a href="{{ product.get_absolute_url }}">
+				<img src="{{ product.image.url }}" width="100px" height="100px" alt="" />
+			</a>
+		</div>
+		<div class="orderDetails">
+			<p>{{ product.name }}</p>
+			<p>{{ product.category }}</p>
+			<p>{{ item.size }}</p>
+		</div>
+		<p class="orderPrice"><span>{{ item.price }}</span>&nbsp; р.</p>
+	</div>
+	{% endwith %}
+	{% endfor %}
+	<br>
+
+			<div class="overallPriceDesc">
+				<p class="pricePart">Стоимость товаров:</p>
+				<p class="priceValue">{{ cart.get_total_price }} р.</p>
+			</div>
+			<div class="overallPriceDesc">
+				<p class="pricePart">Доставка:</p>
+				<p class="priceValue">5 р.</p>
+			</div>
+			<div class="overallPriceDesc">
+				<p class="pricePart">Скидка по предоплате (50%):</p>
+				<p class="priceValue">-XX р.</p>
+			</div>
+			<div class="overallPriceDesc">
+				<p class="pricePart">Итого:</p>
+				<p class="priceValue"><span>{{ cart.get_total_price_sale }} р.</span> </p>
+			</div>
+
+
+</div>
+
+	{% block footer %}{% include "blog/footer.html" %}{% endblock %}
+
+
+</body>
+</html>
