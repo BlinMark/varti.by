@@ -1,0 +1,24 @@
+{% extends 'blog/base_catalog.html' %}
+
+{% load static %}
+
+{% block title %}
+  {% if category %} {{ category.name }} {% else %} Каталог {% endif %}
+{% endblock %}
+
+
+{% block content %}
+<p id="pricepoint">Все картины стоят одинаково. Цена меняется в зависимости от размера. Постер: от <span>50 р.</span> Картина: от<span> 150 р.</span></p>
+<h1>{% if category %}{{ category.name }}{% else %}{% endif %}</h1>
+<div class="items row">
+  {% for product in products %}
+  <div id="catalogItemBlock1" class="catalogItemBlock">
+    <a href="" class="catalogAuthor">{{ product.author }}</a><br>
+    <a href="{{ product.get_absolute_url }}" class="catalogItem">
+      <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no-image.jpg"%}{% endif %}" class="catalogItem">
+    </a>
+    <p class="catalogItemName">{{ product.name }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
