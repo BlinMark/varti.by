@@ -291,7 +291,7 @@ body::-webkit-scrollbar-track:hover {
   margin: 30px auto;
   background: url(http://s48.radikal.ru/i122/1704/b7/646803b0309c.jpg);
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .buttonA{

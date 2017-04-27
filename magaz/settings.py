@@ -47,9 +47,10 @@ INSTALLED_APPS = (
     'cart',
     'orders',
     'widget_tweaks',
+    'gtm',
 )
 
-
+GOOGLE_TAG_ID = 'GTM-WBVQW6L'
 #Редактор текста 
 #####################
 # Зависимость визуального редактора
