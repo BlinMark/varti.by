@@ -90,10 +90,9 @@ font-size: 20px;
 
 #pictureWithPrice{
 	width: 640px;
-	height: 680px;
+	height: 600px;
 	margin: 0 auto;
 }
-
 #mainPicture{
   display: block;
   width: 640px;
