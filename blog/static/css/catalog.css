@@ -276,8 +276,9 @@ body::-webkit-scrollbar-track:hover {
 .catalogAuthor:hover{
   color: #4781ff;}
 .catalogItem{
-  width: 400px;
-  height: 400px;
+  width:400px;
+  height:auto;
+  max-height:400px;
   display: block;
   background: #fee;
   background-size: 100%;
@@ -720,8 +721,9 @@ body::-webkit-scrollbar-track:hover {
 }
 
 .catalogItem{
-  width: 400px;
-  height: 400px;
+  width:400px;
+  height:auto;
+  max-height:400px;
 }
 
 .catalogItemName{

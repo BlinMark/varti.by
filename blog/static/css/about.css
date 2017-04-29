@@ -106,14 +106,27 @@ body::-webkit-scrollbar-track:hover {
 }
 
 #AboutH1{
-  margin:  0 auto 300px auto;
-  padding-top: 391px;
+  margin:  0 auto 200px auto;
+  padding-top: 291px;
   text-align: center;
-  font-weight: 400;
-  font-size: 52px;
+  font-weight: 600;
+  font-size: 35px;
   color: rgba(0,0,0,.9);
-
 }
+#AboutH1::before{
+    content: '';
+    display: block;
+    margin: 0 auto 0 auto;
+    position: relative;
+    top: -30px;
+    width: 80px;
+    height: 80px;
+    background:url(img/Logo_exact_size_blue.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #pointsBlock{
   display: block;
   width: 100%;
@@ -604,16 +617,20 @@ body::-webkit-scrollbar-track:hover {
 
 @media screen and (max-width: 500px){
 
-
 #AboutH1{
   margin:  100px auto 100px auto;
   width: calc(100vw - 100px);
   min-width: 220px;
   text-align: center;
-  font-weight: 400;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 28px;
   color: rgba(0,0,0,.9);
+  }
 
+#AboutH1::before{
+  top: -20px;
+  width: 70px;
+  height: 70px;
 }
 
 #pointsBlock{
