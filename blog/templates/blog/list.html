@@ -8,7 +8,14 @@
 
 
 {% block content %}
-<p id="pricepoint">Все картины стоят одинаково. Цена меняется в зависимости от размера. Постер: от <span>50 р.</span> Картина: от<span> 150 р.</span></p>
+<br>
+
+<div id="topPriceAndDesc">
+<p class="topPriceAndDesc">Скидка <span>60%</span> по предзаказу. <br>Предзаказ на 7 июня 2017 г. <br>
+Осталось: <span>17</span> из <span>45</span></p>
+<p class="topPriceAndDesc"><span>Картины</span>: <br>А3-100р | А2-120р | А1-140р<br><br></p>
+<p class="topPriceAndDesc"><span>Постеры</span>: <br>А3-50р | А2-65р | А1-80р <br><br></p>
+</div>
 <h1>{% if category %}{{ category.name }}{% else %}{% endif %}</h1>
 <div class="items row">
   {% for product in products %}

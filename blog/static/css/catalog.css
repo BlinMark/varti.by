@@ -13,30 +13,30 @@ font:16px "Open sans";
 }
 
 ::selection {
-    color: #fff;
+    color: #fff; 
     background: #2164f4;
 }
 
 body::-webkit-scrollbar {
     width: 5px;
 }
-
-
+ 
+ 
 body::-webkit-scrollbar-track {
-    background-color: #fff;
+    background-color: #fff; 
 }
-
+ 
 body::-webkit-scrollbar-thumb {
   background-color: #2164f4;
 }
 
 body::-webkit-scrollbar-thumb:hover {
   background-color: #4781ff;
-}
+} 
 body::-webkit-scrollbar-track:hover {
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(0,0,0,.1); 
 }
-
+ 
 .content_section{
 	width: 1280px;
   height: inherit;
@@ -77,11 +77,13 @@ body::-webkit-scrollbar-track:hover {
 
 
 .catalogNav-up{
+  background: rgba(255,255,255,1);
   top: 0;
   transition: .3s;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 .catalogNav-down{
+  background: rgba(255,255,255,.95);
   top: 91px;
   transition: .3s;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -139,7 +141,6 @@ body::-webkit-scrollbar-track:hover {
 #catalogNav{
   width: inherit;
   height: 50px;
-  background: rgba(255,255,255,.95);
   position: fixed;
   z-index: 4;
 }
@@ -149,7 +150,7 @@ body::-webkit-scrollbar-track:hover {
   position: absolute;
   top: 50px;
   height: 1px;
-  background: rgba(230,230,230,.95);
+  background: rgba(0,0,0,.10);
 }
 #catalogNavBlock{
   display: inline-block;
@@ -218,15 +219,23 @@ body::-webkit-scrollbar-track:hover {
 }
 
 /*END HEADER*/
-
-#pricepoint{
+#topPriceAndDesc{
+  width: 1010px;
+  margin: 0 auto;
+}
+.topPriceAndDesc{
   width: 300px;
-  margin: 50px auto;
+  display: inline-block;
+  margin: 50px 50px 50px 0;
   text-align: center;
   color: rgba(0,0,0,.7);
   line-height: 22px;
 }
-#pricepoint span{
+.topPriceAndDesc:last-child{
+  margin-right: 0;
+
+}
+.topPriceAndDesc span{
   font-weight: 600;
   color: rgba(0,0,0,.9);
 }
@@ -235,7 +244,7 @@ body::-webkit-scrollbar-track:hover {
 
 /*Nuzhno shtobi schitalo height v zavisimosti ot kolichestva kartinok*/
 #catalogItems{
-  width: 1280px;
+  width: 1280px; 
   height: 2180px;
   display: block;
 }
@@ -266,7 +275,7 @@ body::-webkit-scrollbar-track:hover {
   height: 400px;
   display: block;
   background: #fee;
-  background-size: 100%;
+  background-size: 100%; 
   margin: 10px 0 20px 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -309,7 +318,7 @@ body::-webkit-scrollbar-track:hover {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;  
 }
 #catalogItemBlock1 .catalogItem:hover, #catalogItemBlock2 .catalogItem:hover, #catalogItemBlock3 .catalogItem:hover
 ,#catalogItemBlock4 .catalogItem:hover,#catalogItemBlock5 .catalogItem:hover,#catalogItemBlock6 .catalogItem:hover
@@ -327,9 +336,9 @@ body::-webkit-scrollbar-track:hover {
   opacity: .3;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: center; 
   width: 50px;
-  height: 50px;
+  height: 50px; 
   margin: 100px auto;
 }
 
@@ -348,7 +357,7 @@ body::-webkit-scrollbar-track:hover {
   color: rgba(0,0,0,.9);
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 50px; 
 }
 #contacts p{
   font-size: 14px;
@@ -359,11 +368,11 @@ body::-webkit-scrollbar-track:hover {
 
 #social{
   width: 200px;
-  margin-left:20px;
+  margin-left:20px; 
   float: left;
 }
 #socialL, #socialR{
-  width: 100px;
+  width: 100px; 
   float: left;
 }
 #social h2{
@@ -371,7 +380,7 @@ body::-webkit-scrollbar-track:hover {
   color: rgba(0,0,0,.9);
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 50px; 
 }
 .socialA{
   font-size: 14px;
@@ -389,7 +398,7 @@ body::-webkit-scrollbar-track:hover {
 
 
 @media screen and (max-width: 1290px){
-
+  
 .content_section{
   width: 100%;
   margin: 0 auto;
@@ -519,12 +528,12 @@ body::-webkit-scrollbar-track:hover {
 
 
 @media screen  and (max-width: 1020px){
-
+  
 #topNav{
   top: 0;
 }
   #catalogItems{
-  width: 630px;
+  width: 630px; 
   height: 2620px;
   margin: 0 auto;
 }
@@ -591,13 +600,29 @@ body::-webkit-scrollbar-track:hover {
   opacity: 1;
   width: 150px;
 }
-#pricepoint{
-  width: 300px;
+
+
+#topPriceAndDesc{
+  width: 660px;
   margin: 120px auto 50px auto;
+}
+.topPriceAndDesc{
+  width: 300px;
+  display: inline-block;
+  margin: 50px 0 0 0;
   text-align: center;
   color: rgba(0,0,0,.7);
   line-height: 22px;
 }
+
+.topPriceAndDesc:last-child{
+  margin: 50px 0 0 50px;
+}
+.topPriceAndDesc:first-child{
+  display: block;
+  margin: 0 auto 30px auto;
+}
+
 }
 
 @media screen and (max-width: 710px){
@@ -606,8 +631,7 @@ body::-webkit-scrollbar-track:hover {
   width: inherit;
   height: 50px;
   position: fixed;
-  top: auto;
-  bottom: 0;
+  top: calc(100vh - 50px);
   z-index: 4;
 }
 
@@ -674,12 +698,12 @@ body::-webkit-scrollbar-track:hover {
   background: url(img/index/logo111.svg);
   background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
 }
 
 
   #catalogItems{
-  width: 400px;
+  width: 400px; 
   height: 6350px;
   margin: 0 auto;
 }
@@ -758,11 +782,26 @@ body::-webkit-scrollbar-track:hover {
   margin: 10px 20px 0 0;
 }
 
-#pricepoint{
+#topPriceAndDesc{
   width: 150px;
-  text-align: left;
-  margin: 120px 0 200px 50vw;
+  margin: 50px 0 200px 50vw;
 }
+.topPriceAndDesc{
+  width: 150px;
+  display: block;
+  margin: 0 0 20px 0;
+  text-align: left;
+  color: rgba(0,0,0,.7);
+  line-height: 22px;
+}
+
+.topPriceAndDesc:last-child{
+  margin: 0;
+}
+.topPriceAndDesc:first-child{
+  margin: 0 0 20px 0;
+}
+
 
 
 
@@ -790,7 +829,7 @@ body::-webkit-scrollbar-track:hover {
 }
 
 #social{
-  width: inherit;
+  width: inherit; 
   margin: 0 auto;
   float: none;
   display: block;
@@ -798,7 +837,7 @@ body::-webkit-scrollbar-track:hover {
 }
 
 #socialL, #socialR{
-  width: 50%;
+  width: 50%; 
   float: left;
   display: block;
   text-align: center;
@@ -808,7 +847,7 @@ body::-webkit-scrollbar-track:hover {
 }
 #social h2{
   visibility: hidden;
-  margin: 0 0 10px 0;
+  margin: 0 0 10px 0; 
 }
 .socialA{
   font-size: 14px;
@@ -820,7 +859,7 @@ body::-webkit-scrollbar-track:hover {
 @media screen and (max-width: 480px){
 
 #catalogItems{
-  width: 300px;
+  width: 300px; 
   height: 5180px;
   margin: 0 auto;
 }
@@ -875,15 +914,15 @@ body::-webkit-scrollbar-track:hover {
   margin: 10px 0 0 0;
 }
 
-#pricepoint{
+#topPriceAndDesc{
   width: 150px;
-  margin: 120px 0 100px 50vw;
+  margin: 50px 0 100px 50vw;
 }
 }
 
 @media screen and (max-width: 340px){
   #catalogItems{
-  width: 200px;
+  width: 200px; 
   height: 5180px;
 }
 
@@ -937,9 +976,13 @@ body::-webkit-scrollbar-track:hover {
 #searchInput{
   width: 90px;
 }
-#pricepoint{
+
+#topPriceAndDesc{
   width: 120px;
-  margin: 50px 0 150px 50vw;
+  margin: 50px 0 100px 50vw;
+}
+.topPriceAndDesc{
+  width: 120px;
 }
 
 }

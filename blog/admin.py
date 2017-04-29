@@ -25,8 +25,16 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ['name', 'sername', 'phone', 'email', 'product_format',
-                    'product_size', 'product_orientation', 'product_kreplenie', 'product']
+    list_display = ['name',
+                    'sername',
+                    'phone',
+                    'email',
+                    'product_format',
+                    'product_size',
+                    'product',
+                    'price',
+                    # 'pic'
+                    ]
 
 
 admin.site.register(Order, OrderAdmin)

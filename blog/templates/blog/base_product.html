@@ -50,7 +50,6 @@
 				<div id="mainPicture">
 					<img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no-image.jpg"%}{% endif %}" class="img-responsive">
 				</div>
-				<p id="picturePrice">{{ product.price }} р.</p>
 			</div>
 	</div>
 
@@ -59,28 +58,24 @@
 			<p id="authorAndRubric"><a href="#">{{ product.author }}</a>&nbsp;&nbsp;&nbsp; в &nbsp;&nbsp;&nbsp;<a href="{{ product.category.get_absolute_url }}">{{ product.category }}</a></p>
 			<h1 id="PictureName">{{ product.name }}</h1>
 			<p id="year"><span>{{ product.date }}</span></p>
-			<p id="PictureDesc">{{ product.description | safe}}</p>
+			<p id="PictureDesc">Картины: А3-100р | А2-120р | А1-140р <br>
+			Постеры: А3-50р | А2-65р | А1-80р <br><br>
+			Скидка <span>60%</span> по предзаказу. <br> <br>
+
+			Предзаказ на 7 июня 2017 г.<br>
+			 Осталось: <span>17</span> из <span>45</span></p>
 
 			<form  action="." method="post" id="pictureDetails">
 				<h2 id="detailsH2">Выберите свою картину</h2>
-				<div class="inputBlock">
-					<input readonly type="hidden" class="personalInput" name="product" value="{{ product.name }}">
-				</div>
 				<h2 class="detailsInnerH2">Формат</h2>
 				<div id="formatBlock">
 					{% render_field form.product_format class+="checkoutInput" placeholder="Формат" %}
 				</div>
 				<h2 class="detailsInnerH2">Размер</h2>
 				<div id="sizeBlock">
-					{% render_field form.product_orientation class+="checkoutInput" placeholder="Ориентация" %}
 					{% render_field form.product_size class+="checkoutInput" placeholder="Размер" %}
-
 				</div>
 
-				<h2 class="detailsInnerH2">Способ крепления</h2>
-				<div id="attachBlock">
-					{% render_field form.product_kreplenie class+="checkoutInput" placeholder="Способ крепления" %}
-				</div>
 
 				<h2 class="detailsInnerH2">Личные данные</h2>
 				<div class="inputBlock">

@@ -15,7 +15,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
@@ -25,18 +24,17 @@ SECRET_KEY = '@4-@fls*2=3l0@ksdldv)=swd6ueti)6p5%e^4z&71*z_ahs1q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#DEBUG404 = True
+# DEBUG404 = True
 
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
-
 # Application definition
 
 INSTALLED_APPS = (
-    'django_admin_bootstrapped', #новая админка
+    'django_admin_bootstrapped',  # новая админка
     'django.contrib.admin',
-    'ckeditor', #текстовый редактор
+    'ckeditor',  # текстовый редактор
     'ckeditor_uploader',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,13 +43,13 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'blog',
     'cart',
-    'orders',
+    # 'orders',
     'widget_tweaks',
     'gtm',
 )
 
 GOOGLE_TAG_ID = 'GTM-WBVQW6L'
-#Редактор текста 
+# Редактор текста
 #####################
 # Зависимость визуального редактора
 CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
@@ -59,12 +57,12 @@ CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_IMAGE_BACKEND = 'pillow'
 
 CKEDITOR_CONFIGS = {
- 'default': {
- 'toolbar': 'basic',
- 'height': 500,
- 'width': 900,
- #'extraPlugins':'codesnippet',
- },
+    'default': {
+        'toolbar': 'basic',
+        'height': 500,
+        'width': 900,
+        # 'extraPlugins':'codesnippet',
+    },
 }
 
 CKEDITOR_UPLOAD_SLUGIFY_FILENAME = False
@@ -84,7 +82,6 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'magaz.urls'
-
 
 TEMPLATES = [
     {
@@ -109,7 +106,6 @@ DAB_FIELD_RENDERER = 'django_admin_bootstrapped.renderers.BootstrapFieldRenderer
 
 WSGI_APPLICATION = 'magaz.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
@@ -119,7 +115,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
@@ -133,7 +128,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/

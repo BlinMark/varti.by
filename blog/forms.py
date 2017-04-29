@@ -6,4 +6,4 @@ class OrderCreateForm(forms.ModelForm):
     class Meta:
         model = Order
         fields = ['name', 'sername', 'phone', 'email', 'product_format',
-                    'product_size', 'product_orientation', 'product_kreplenie', 'product']
+                    'product_size', 'product', 'price']

@@ -93,12 +93,13 @@ class Product(models.Model):
 
 
 class Order(models.Model):
+    # pic = models.ImageField(blank=True, help_text='150x150px', verbose_name='LOL')
+    price = models.CharField(max_length=100, verbose_name='Цена', blank=True, null=True)
     product = models.CharField(max_length=100, verbose_name='Товар', blank=True, null=True)
     name = models.CharField(max_length=20, verbose_name="Имя", blank=True, null=True)
     sername = models.CharField(max_length=20, verbose_name='Фамилия', blank=True, null=True)
     phone = models.PositiveIntegerField(verbose_name='Телефон', blank=True, null=True)
     email = models.EmailField(max_length=30, verbose_name='E-mail', blank=True, null=True)
-
 
     # Формат товара
     picture = 'Картина'
@@ -110,41 +111,20 @@ class Order(models.Model):
     product_format = models.CharField(max_length=50, verbose_name='Формат', choices=FORMAT, default=0)
 
     # Размер товара
-    A1 = 'A0 80*120 см. (80 р.)'
-    A2 = 'A1 60*80 см. (70 р.)'
-    A3 = 'A2 40*60 см. (60 р.)'
-    A4 = 'A3 30*40 см (50 р.)'
-    A5 = 'A4 20*30 см. (40 р.)'
+    # A1 = 'A0 (80*120 см)'
+    A2 = 'A1 (60*80 см)'
+    A3 = 'A2 (40*60 см)'
+    A4 = 'A3 (30*40 см)'
+    # A5 = 'A4 (20*30 см)''
     SIZE = (
-        (A1, 'A0 80*120 см. (80 р.)'),
-        (A2, 'A1 60*80 см. (70 р.)'),
-        (A3, 'A2 40*60 см. (60 р.)'),
-        (A4, 'A3 30*40 см (50 р.)'),
-        (A5, 'A4 20*30 см. (40 р.)'),
+        # (A1, 'A0 (80*120 см)'),
+        (A2, 'A1 (60*80 см)'),
+        (A3, 'A2 (40*60 см)'),
+        (A4, 'A3 (30*40 см)'),
+        # (A5, 'A4 (20*30 см)'),
     )
-    product_size = models.CharField(max_length=50, verbose_name='Размер', choices=SIZE, default=2)
+    product_size = models.CharField(max_length=50, verbose_name='Размер', choices=SIZE, default=A4)
 
-    # Ориетация товара
-    horizontal = 'Горизонтальная'
-    vertical = 'Вертикальная'
-    ORIENTATION = (
-        (horizontal, 'Горизонтальная'),
-        (vertical, 'Вертикальная')
-    )
-    product_orientation = models.CharField(max_length=50, verbose_name='Ориентация', choices=ORIENTATION, default=0)
-
-    # Способ крепления
-    kleikaya_lenta = 'Клейкая лента (1 р.)'
-    lipuchka = 'Липучки нарезные (2 р.)'
-    lipuchki_gotovye = 'Липучки готовые (5 р.)'
-    verevka = 'Верёка + крючёк (7 р.)'
-    KREPLENIE = (
-        (kleikaya_lenta, 'Клейкая лента (1 р.)'),
-        (lipuchka, 'Липучки нарезные (2 р.)'),
-        (lipuchki_gotovye, 'Липучки готовые (5 р.)'),
-        (verevka, 'Верёка + крючёк (7 р.)')
-    )
-    product_kreplenie = models.CharField(max_length=50, verbose_name='Способ крепления', choices=KREPLENIE, default=0)
 
     class Meta:
         verbose_name = 'Заказ'
