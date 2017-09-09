@@ -11,12 +11,13 @@
 <br>
 
 <div id="topPriceAndDesc">
-<p class="topPriceAndDesc">Скидка <span>54%</span> по предзаказу. <br>Предзаказ на 7 июня 2017 г. <br>
-Осталось: <span>17</span> из <span>45</span></p>
-<p class="topPriceAndDesc">Картины: <br><span class="crossed">А3-65р | А2-91р | А1-132р</span><br><span>А3-30р | А2-42р | А1-61р</span></p>
-<p class="topPriceAndDesc">Постеры: <br><span class="crossed">А3-43р | А2-54р | А1-82р</span> <br><span>А3-20р | А2-25р | А1-38р</span></p>
+  <br><br><br>
 </div>
+
 <h1>{% if category %}{{ category.name }}{% else %}{% endif %}</h1>
+
+<br>
+
 <div class="items row">
   {% for product in products %}
   <div id="catalogItemBlock1" class="catalogItemBlock">
@@ -24,7 +25,7 @@
     <a href="{{ product.get_absolute_url }}" class="catalogItem">
       <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no-image.jpg"%}{% endif %}" class="catalogItem">
     </a>
-    <p class="catalogItemName">{{ product.name }}</p>
+    <p class="catalogItemName">{{ product.name }}<br>{{ product.price}} руб.</p>
   </div>
   {% endfor %}
 </div>

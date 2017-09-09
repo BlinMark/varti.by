@@ -36,7 +36,7 @@
 
 	<div id="topNav" class="topNav-down">
 		<a href="{% url 'blog:index' %}" id="logoLeft">
-			<img src="{% static 'images\index\logo111.svg'%}">
+			<img src="{% static 'images\60x60.png'%}">
 		</a>
 		<div id="topNavBlock">
 			<a href="{% url 'blog:index' %}" class="topNavA">Главная</a>
@@ -47,18 +47,14 @@
 	</div>
 	<div id="catalogNav" class="catalogNav-down">
 		<div id="catalogNavBlock" {% if not category %} class="selected" {% endif %}>
-
       <a href="{% url "blog:ProductList" %}" class="catalogNavA catalogNavAActive">Все</a>
       {% for cat in categories %}
       <a href=""{% if category.slug == cat.slug %} class="selected" {% endif %}></a>
       <a href="{{ cat.get_absolute_url }}" class="catalogNavA">{{ cat.name }}</a>
 			{% endfor %}
 		</div>
-		<div id="navSearch">
-			<button id="searchButton"></button>
-			<input type="text" id="searchInput" placeholder="Где мой слон?">
-		</div>
 	</div>
+
 
 
 <div id="catalogItems">

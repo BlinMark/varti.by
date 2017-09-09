@@ -18,7 +18,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 # Модель товара
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['name', 'slug', 'author', 'price', 'stock', 'available', 'created', 'updated']
+    list_display = ['name', 'slug', 'price', 'stock', 'available', 'created', 'updated']
     list_filter = ['available', 'created', 'updated']
     list_editable = ['price', 'stock', 'available']
     prepopulated_fields = {'slug': ('name',)}
@@ -39,6 +39,6 @@ class OrderAdmin(admin.ModelAdmin):
 
 admin.site.register(Order, OrderAdmin)
 admin.site.register(Category, CategoryAdmin)
-admin.site.register(Author, AuthorAdmin)
+#admin.site.register(Author, AuthorAdmin)
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Post)

@@ -18,7 +18,7 @@
 <script>
 	$(function(){
 		$(window).scroll(function() {
-			if($(this).scrollTop() >= $('#right').height() - $('#pictureWithPrice').height() - 150) {
+			if($(this).scrollTop() >= $('#right').height() - $('#pictureWithPrice').height() - 0) {
 			$('#pictureWithPrice').addClass('stop');
 			$('#pictureWithPrice').removeClass('sticky');
 			}
@@ -36,7 +36,7 @@
 
 	<div id="topNav">
 		<a href="{% url 'blog:index' %}" id="logoLeft">
-			<img src="{% static 'images\index\logo111.svg'%}">
+			<img src="{% static 'images\60x60.png'%}">
 		</a>
 		<div id="topNavBlock">
 			<a href="{% url 'blog:index' %}" class="topNavA">Главная</a>
@@ -55,24 +55,13 @@
 
 
 	<div id="right">
-			<p id="authorAndRubric"><a href="#">{{ product.author }}</a>&nbsp;&nbsp;&nbsp; в &nbsp;&nbsp;&nbsp;<a href="{{ product.category.get_absolute_url }}">{{ product.category }}</a></p>
-			<h1 id="PictureName">{{ product.name }}</h1>
+			<p id="authorAndRubric"><a href="{{ product.category.get_absolute_url }}">{{ product.category }}</a></p>
+		<h1 id="PictureName">	<nobr>{{ product.name }} <p id="year">{{ product.price}} руб.</p></nobr></h1>
 			<p id="year"><span>{{ product.date }}</span></p>
-			<p id="PictureDesc">Картины: А3&nbsp;-&nbsp;<strike>65р</strike>&nbsp;<span>30р</span>|
-				А2&nbsp;-&nbsp;<strike>91р</strike>&nbsp;<span>42р</span>|
-				А1&nbsp;-&nbsp;<strike>132р</strike>&nbsp;<span>61р</span>
-				<br>
-				Постеры: А3&nbsp;-&nbsp;<strike>43р</strike>&nbsp;<span>20р</span>|
-				А2&nbsp;-&nbsp;<strike>54р</strike>&nbsp;<span>25р</span>|
-				А1&nbsp;-&nbsp;<strike>82р</strike>&nbsp;<span>38р</span>
-				<br><br>
-			Скидка <span>54%</span> по предзаказу. <br> <br>
-
-			Предзаказ на 7 июня 2017 г.<br>
-			 Осталось: <span>17</span> из <span>45</span></p>
+			<p id="PictureDesc">Какое-то описание</p>
 
 			<form  action="." method="post" id="pictureDetails">
-				<h2 id="detailsH2">Выберите свою картину</h2>
+				<h2 id="detailsH2">Оформление заказа</h2>
 				<h2 class="detailsInnerH2">Формат</h2>
 				<div id="formatBlock">
 					{% render_field form.product_format class+="checkoutInput" placeholder="Формат" %}
@@ -80,6 +69,11 @@
 				<h2 class="detailsInnerH2">Размер</h2>
 				<div id="sizeBlock">
 					{% render_field form.product_size class+="checkoutInput" placeholder="Размер" %}
+				</div>
+
+
+				<div id="sizeBlock">
+					{% render_field form.product  type="hidden" class+="checkoutInput" value=product.name%}
 				</div>
 
 
