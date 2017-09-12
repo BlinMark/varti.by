@@ -13,30 +13,30 @@ font:16px "Open sans";
 }
 
 ::selection {
-    color: #fff; 
+    color: #fff;
     background: #2164f4;
 }
 
 body::-webkit-scrollbar {
     width: 5px;
 }
- 
- 
+
+
 body::-webkit-scrollbar-track {
-    background-color: #fff; 
+    background-color: #fff;
 }
- 
+
 body::-webkit-scrollbar-thumb {
   background-color: #2164f4;
 }
 
 body::-webkit-scrollbar-thumb:hover {
   background-color: #4781ff;
-} 
-body::-webkit-scrollbar-track:hover {
-    background-color: rgba(0,0,0,.1); 
 }
- 
+body::-webkit-scrollbar-track:hover {
+    background-color: rgba(0,0,0,.1);
+}
+
 .content_section{
 	width: 1280px;
 	margin: 0 auto;
@@ -128,7 +128,7 @@ body::-webkit-scrollbar-track:hover {
   height: 70px;
   text-align: center;
   font-size: 14px;
-  color: rgba(0,0,0,.4); 
+  color: rgba(0,0,0,.4);
   margin: 100px auto 0 auto;
 }
 
@@ -152,7 +152,7 @@ body::-webkit-scrollbar-track:hover {
   text-align: center;
   background: #2164f4;
   transition: .2s;
-  border-radius: 3px; 
+  border-radius: 3px;
 }
 .buttonA:hover{
   background: #4781ff;
@@ -163,7 +163,7 @@ body::-webkit-scrollbar-track:hover {
 
 
 @media screen and (max-width: 1290px){
-  
+
 body{
     overflow-y: scroll;
 }
@@ -245,7 +245,7 @@ body{
   float: left;
   margin:0;
   background: none;
-  visibility: none;
+  visibility: hidden;
 }
 
 #devider{
@@ -273,9 +273,7 @@ body{
   height: 70px;
   text-align: center;
   font-size: 14px;
-  color: rgba(0,0,0,.4); 
+  color: rgba(0,0,0,.4);
   margin: 100px auto 0 auto;
 }
 }
-
-

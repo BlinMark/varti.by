@@ -686,28 +686,12 @@ body::-webkit-scrollbar-track:hover {
   float: left;
   margin:0;
   background: none;
-  visibility: none;
+  visibility: hidden;
 }
 
-.content_section::before{
-  content: '';
-  display: block;
-  width: 100%;
-  height: 120px;
-  position: absolute;
-  top: -10px;
-  margin:0 auto;
-  z-index: 2;
-  background: url(img/index/logo111.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-
-  #catalogItems{
+#catalogItems{
   width: 400px;
-  height: 6350px;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -737,21 +721,20 @@ body::-webkit-scrollbar-track:hover {
 
 
 #catalogNav{
-  width: 400px;
-  height: 300px;
+  width: 455px;
+  height: auto;
   background: none;
   position: absolute;
   background: none;
-  top: 120px;
+  top: 20px;
   left: calc(50vw - 200px);
   z-index: 3;
 }
 #catalogNav::before{content: none;}
 .catalogNavA{
   display: block;
-  margin: 0 0 20px 0;
-  height: 30px;
-  padding-top:5px;
+  height: 25px;
+  padding: 3px;
   float: left;
   text-align: left;
   font:16px "Open sans";
@@ -759,6 +742,8 @@ body::-webkit-scrollbar-track:hover {
   text-decoration: none;
   color: rgba(0,0,0,.4);
   transition: .2s;
+  margin: 0 3px 3px 3px;
+  background-color: none;
 }
 
 .catalogNavAActive{
@@ -771,10 +756,9 @@ body::-webkit-scrollbar-track:hover {
 
 #catalogNavBlock{
   display: block;
-  height: 300px;
-  width: 120px;
+  height: inherit;
+  width: inherit;
   float: left;
-  margin: 0 auto;
 }
 
 
@@ -893,7 +877,7 @@ body::-webkit-scrollbar-track:hover {
 
 #catalogNav{
   width: 300px;
-  height: 300px;
+  height: auto;
   left: calc(50vw - 150px);
 }
 .catalogNavA{
@@ -909,8 +893,8 @@ body::-webkit-scrollbar-track:hover {
 
 
 #catalogNavBlock{
-  height: 300px;
-  width: 100px;
+  height: auto;
+  width: inherit;
 }
 
 
@@ -950,7 +934,7 @@ body::-webkit-scrollbar-track:hover {
 
 #catalogNav{
   width: 250px;
-  height: 300px;
+  height: auto;
   left: calc(50vw - 125px);
 }
 .catalogNavA{
@@ -966,8 +950,8 @@ body::-webkit-scrollbar-track:hover {
 
 
 #catalogNavBlock{
-  height: 300px;
-  width: 100px;
+  height: inherit;
+  width: inherit;
 }
 
 

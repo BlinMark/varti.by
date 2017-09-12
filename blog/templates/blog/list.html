@@ -8,20 +8,17 @@
 
 
 {% block content %}
-<br>
+
 
 <div id="topPriceAndDesc">
-  <br><br><br>
 </div>
 
 <h1>{% if category %}{{ category.name }}{% else %}{% endif %}</h1>
 
-<br>
-
 <div class="items row">
   {% for product in products %}
   <div id="catalogItemBlock1" class="catalogItemBlock">
-    <a href="" class="catalogAuthor">{{ product.author }}</a><br>
+
     <a href="{{ product.get_absolute_url }}" class="catalogItem">
       <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no-image.jpg"%}{% endif %}" class="catalogItem">
     </a>

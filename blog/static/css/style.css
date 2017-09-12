@@ -526,7 +526,7 @@ padding:15px 0 15px 0;
 	float: left;
 	margin:0;
 	background: none;
-	visibility: none;
+	visibility: hidden;
 }
 .content_section::before{
 	content: '';
