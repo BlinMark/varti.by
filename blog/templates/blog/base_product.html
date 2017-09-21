@@ -11,25 +11,14 @@
   <link rel="stylesheet" href="{% static 'css/reset.css' %}">
 	<link rel="shortcut icon" href="{% static 'images/favicon_blue.png' %}">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<style>
+   .descr { visibility: hidden; }
+  </style>
 </head>
 <body>
 	<?php include_once("analyticstracking.php") ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-	$(function(){
-		$(window).scroll(function() {
-			if($(this).scrollTop() >= $('#right').height() - $('#pictureWithPrice').height() - 0) {
-			$('#pictureWithPrice').addClass('stop');
-			$('#pictureWithPrice').removeClass('sticky');
-			}
 
-			else{
-			$('#pictureWithPrice').removeClass('stop');
-			$('#pictureWithPrice').addClass('sticky');
-			}
-		});
-	});
-</script>
 
 
 <div class="content_section">
@@ -60,51 +49,18 @@
 			<p id="year"><span>{{ product.date }}</span></p>
 			<p id="PictureDesc">Какое-то описание</p>
 
-			<form  action="." method="post" id="pictureDetails">
-				<h2 id="detailsH2">Оформление заказа</h2>
-				<h2 class="detailsInnerH2">Формат</h2>
-				<div id="formatBlock">
-					{% render_field form.product_format class+="checkoutInput" placeholder="Формат" %}
-				</div>
-				<h2 class="detailsInnerH2">Размер</h2>
-				<div id="sizeBlock">
-					{% render_field form.product_size class+="checkoutInput" placeholder="Размер" %}
-				</div>
-
-
-				<div id="sizeBlock">
-					{% render_field form.product  type="hidden" class+="checkoutInput" value=product.name%}
+			<form action="{% url "cart:CartAdd" product.id %}" method="post">
+				  <div id="submitButtons">
+			    <center class="descr">{{ cart_product_form }}</center>
+			    {% csrf_token %}
+					<input type="submit"  id="buttonBuy" value="Добавить в корзину">
+			    <label class="submitButtonLabel" for="buttonBuy">
+			      Добавить в корзину
+			    </label>
 				</div>
 
+			</form>
 
-				<h2 class="detailsInnerH2">Личные данные</h2>
-				<div class="inputBlock">
-					{% render_field form.name class+="personalInput" placeholder="Ваше имя" %}
-					<label class="personalLabel" for="name">Ваше имя:</label>
-				</div>
-				<div class="inputBlock">
-					{% render_field form.sername class+="personalInput" placeholder="Ваше Фамилия" %}
-					<label class="personalLabel" for="surname">Ваша фамилия:</label>
-				</div>
-
-				<div class="inputBlock">
-					{% render_field form.phone title="Введите номер без пробелов" class+="personalInput" placeholder="+XXX (XX) XXX-XX-XX" %}
-					<label class="personalLabel" for="phone">Контактный телефон:</label>
-				</div>
-				<div class="inputBlock">
-					{% render_field form.email title="Введите адрес электронной почты по которому мы свяжемся с вами" class+="personalInput" placeholder="example@varti.by" %}
-					<label class="personalLabel" for="mail">e-mail:</label>
-				</div>
-				<p class="preorderP">Бесплатная доставка по РБ. Скидка 54% по предзаказу</p>
-				<div id="submitButtons">
-					{% csrf_token %}
-					<input type="submit" form="pictureDetails" id="buttonBuy" value="Сделать предзаказ">
-					<label class="submitButtonLabel" for="buttonBuy">
-						Сделать предзаказ
-					</label>
-
-				</div>
-		</form>
 	</div>
 
 

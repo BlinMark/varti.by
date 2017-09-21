@@ -1,6 +1,5 @@
 from django.db import models
 from blog.models import Product
-from cart.forms import CHOICES
 
 
 class Order(models.Model):
@@ -35,21 +34,6 @@ class OrderItem(models.Model):
     product = models.ForeignKey(Product, related_name='order_items')
     price = models.DecimalField(verbose_name='Цена', max_digits=10, decimal_places=2)
     quantity = models.PositiveIntegerField(verbose_name='Количество', default=1)
-
-    A1 = 'A0'
-    A2 = 'A1'
-    A3 = 'A2'
-    A4 = 'A3'
-    A5 = 'A4'
-    SIZE = (
-        (A1, 'A0'),
-        (A2, 'A1'),
-        (A3, 'A2'),
-        (A4, 'A3'),
-        (A5, 'A4'),
-    )
-
-    product_size = models.CharField(max_length=2, verbose_name='Размер', choices=CHOICES, default=0)
 
     def __str__(self):
         return '{}'.format(self.id)

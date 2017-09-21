@@ -2,142 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3edf51f3-b71e-4c1b-a343-bc1b62db3a34" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/25/4samsung_galaxy_siv_original_wallpapers_1920x1920.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/2_trees.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Authentic_camera.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Blue_WTF_Abstrakcia.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Brown Horse.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Brown and White Squirrel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Cloudy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Cool_mountains_and_dark_clouds.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Eiffel_Tower.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Eiffel_tower_clouds.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Fire_Sundown.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Golden_Gates_Bridge.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Grand_Canyon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Green_mountain_in_fog.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Kitty.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Kuznya.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/LIVH_boat_snow.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Maffins_with_blackberry.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Mountain.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Observatory.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Purple_mountains.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Sands.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Sea__Wave.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Sun_rise.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Sun_winter_trees.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Vasya_Lek.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/Wood_in_fog.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/authentic_chevrolet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/beach_green_sea.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/bicycles_home.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/big_home.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/boats_pier.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/body_of_water.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/bridge_in_clouds.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/bridge_night_lights.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/chamomile.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/city_buildings_BW.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/clothes.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/cool_dog.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/cool_picture_of_food.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/fast-bikes-in-sands.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/gift-jeans-fashion.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/glasess_in_the_sun.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/ice-cold-water.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/icebergs.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/in_clouds.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/islands_ocean.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/landscape_city_river_sun.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/landscape_dark_mountains.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/landscape_wood_river.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/lighthouse.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/lighthouse_sea_purple.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/magic_water.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/moscow-city-2017.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/mountains_water_nice.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/night_city.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/ocean-waves-tide-stones.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/pexels-photo-70860.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/pexels-photo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/road_after_rain.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/sea-landscape-mountains-nature.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/sea.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/sky_strange_building.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/sun_city.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/sunny_clouds.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/sunset_sea.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/tree_sunset_blue.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/waterfall.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/white_stairs.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/wood_brown.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/27/wool.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/Cloudy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/Cool_mountains_and_dark_clouds.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/Eiffel_Tower.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/Fire_Sundown.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/Grand_Canyon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/Green_mountain_in_fog.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/Kuznya.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/LIVH_boat_snow.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/Purple_mountains.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/Sands.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/Sun_rise.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/Sun_winter_trees.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/Wood_in_fog.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/authentic_chevrolet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/bicycles_home.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/boats_pier.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/body_of_water.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/bridge_in_clouds.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/city_buildings_BW.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/cool_dog.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/cool_picture_of_food.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/fast-bikes-in-sands.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/glasess_in_the_sun.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/ice-cold-water.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/icebergs.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/in_clouds.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/islands_ocean.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/landscape_city_river_sun.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/landscape_dark_mountains.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/landscape_wood_river.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/lighthouse.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/lighthouse_sea_purple.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/magic_water.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/mountains_water_nice.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/night_city.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/pexels-photo-70860.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/road_after_rain.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/sea-landscape-mountains-nature.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/sky_strange_building.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/sun_city.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/sunny_clouds.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/sunset_sea.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/tree_sunset_blue.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/white_stairs.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/wood_brown.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/28/wool.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/29/Brown_Horse.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/29/Brown_and_White_Squirrel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/29/Cloudy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/29/authentic_chevrolet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/29/bridge_night_lights.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/products/2017/04/29/ice-cold-water.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/admin.py" afterPath="$PROJECT_DIR$/blog/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/models.py" afterPath="$PROJECT_DIR$/blog/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/css/product.css" afterPath="$PROJECT_DIR$/blog/static/css/product.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/css/style.css" afterPath="$PROJECT_DIR$/blog/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/about.html" afterPath="$PROJECT_DIR$/blog/templates/blog/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/base_catalog.html" afterPath="$PROJECT_DIR$/blog/templates/blog/base_catalog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/base_product.html" afterPath="$PROJECT_DIR$/blog/templates/blog/base_product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/footer.html" afterPath="$PROJECT_DIR$/blog/templates/blog/footer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/index.html" afterPath="$PROJECT_DIR$/blog/templates/blog/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/list.html" afterPath="$PROJECT_DIR$/blog/templates/blog/list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/post_list.html" afterPath="$PROJECT_DIR$/blog/templates/blog/post_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/views.py" afterPath="$PROJECT_DIR$/blog/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart/forms.py" afterPath="$PROJECT_DIR$/cart/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart/templates/cart/detail.html" afterPath="$PROJECT_DIR$/cart/templates/cart/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart/views.py" afterPath="$PROJECT_DIR$/cart/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magaz/settings.py" afterPath="$PROJECT_DIR$/magaz/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/forms.py" afterPath="$PROJECT_DIR$/orders/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/models.py" afterPath="$PROJECT_DIR$/orders/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/views.py" afterPath="$PROJECT_DIR$/orders/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -152,11 +33,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="67" column="6" lean-forward="false" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+            <state relative-caret-position="682">
+              <caret line="125" column="73" lean-forward="false" selection-start-line="125" selection-start-column="51" selection-end-line="125" selection-end-column="73" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -164,12 +45,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/admin.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cart/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="578">
+              <caret line="34" column="62" lean-forward="false" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,11 +60,43 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="988">
+              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cart/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cart.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cart/cart.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1207">
+              <caret line="73" column="36" lean-forward="false" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cart/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="101" lean-forward="false" selection-start-line="6" selection-start-column="101" selection-end-line="6" selection-end-column="101" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -208,19 +123,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/cart/models.py" />
-        <option value="$PROJECT_DIR$/cart/views.py" />
-        <option value="$PROJECT_DIR$/cart/cart.py" />
-        <option value="$PROJECT_DIR$/cart/forms.py" />
-        <option value="$PROJECT_DIR$/orders/views.py" />
         <option value="$PROJECT_DIR$/orders/admin.py" />
-        <option value="$PROJECT_DIR$/blog/urls.py" />
-        <option value="$PROJECT_DIR$/orders/forms.py" />
-        <option value="$PROJECT_DIR$/orders/models.py" />
-        <option value="$PROJECT_DIR$/magaz/settings.py" />
-        <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/blog/forms.py" />
         <option value="$PROJECT_DIR$/blog/admin.py" />
+        <option value="$PROJECT_DIR$/blog/urls.py" />
+        <option value="$PROJECT_DIR$/cart/cart.py" />
+        <option value="$PROJECT_DIR$/magaz/urls.py" />
+        <option value="$PROJECT_DIR$/orders/views.py" />
+        <option value="$PROJECT_DIR$/magaz/settings.py" />
+        <option value="$PROJECT_DIR$/orders/models.py" />
+        <option value="$PROJECT_DIR$/orders/forms.py" />
         <option value="$PROJECT_DIR$/blog/models.py" />
+        <option value="$PROJECT_DIR$/cart/views.py" />
+        <option value="$PROJECT_DIR$/blog/views.py" />
+        <option value="$PROJECT_DIR$/cart/forms.py" />
       </list>
     </option>
   </component>
@@ -231,10 +147,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -270,7 +186,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -293,12 +208,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="orders" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elmarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elmarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elmarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Elmarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -589,21 +533,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17552084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.010318949" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -612,25 +556,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34427768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2400835" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.010318949" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -643,43 +568,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/magaz/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="10" lean-forward="false" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/magaz/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
@@ -889,13 +777,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cart/models.py" />
-    <entry file="file://$PROJECT_DIR$/cart/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -910,70 +791,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cart/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/django/virtualenv/Lib/site-packages/django/views/generic/base.py" />
-    <entry file="file://$PROJECT_DIR$/orders/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orders/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart/cart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orders/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orders/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orders/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="34" column="67" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/magaz/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="10" lean-forward="false" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -983,18 +801,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
+    <entry file="file://$PROJECT_DIR$/cart/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magaz/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magaz/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
           <folding>
-            <element signature="e#0#54#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,13 +859,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/models.py">
+    <entry file="file://$PROJECT_DIR$/orders/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="67" column="6" lean-forward="false" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+        <state relative-caret-position="357">
+          <caret line="21" column="69" lean-forward="true" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/cart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="73" column="36" lean-forward="false" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="62" lean-forward="false" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="125" column="73" lean-forward="false" selection-start-line="125" selection-start-column="51" selection-end-line="125" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="101" lean-forward="false" selection-start-line="6" selection-start-column="101" selection-end-line="6" selection-end-column="101" />
+          <folding />
         </state>
       </provider>
     </entry>
