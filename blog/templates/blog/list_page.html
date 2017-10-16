@@ -1,0 +1,19 @@
+{% load endless %}
+
+{% paginate 10 products %}
+
+
+  <h1>{% if category %}{{ category.name }}{% else %}{% endif %}</h1>
+  <div class="items row">
+
+    {% for product in products %}
+    <div id="catalogItemBlock1" class="catalogItemBlock">
+      <a href="{{ product.get_absolute_url }}" class="catalogItem">
+        <img src="{% if product.image %}{{ product.image.url }}{% endif %}" class="catalogItem">
+      </a>
+      <p class="catalogItemName">{{ product.name }}<br>{{ product.price}} руб.</p>
+    </div>
+    {% endfor %}
+  </div>
+
+{% show_more "Ещё" "Загрузка..." %}

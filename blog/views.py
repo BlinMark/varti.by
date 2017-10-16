@@ -40,19 +40,22 @@ def blog(request):
 
 
 # Страница с товарами
-def ProductList(request, category_slug=None):
+def ProductList(request, category_slug=None, template='blog/list.html', page_template='blog/list_page.html'):
     category = None
     categories = Category.objects.all()
     products = Product.objects.filter(available=True)
+
+    if request.is_ajax():
+        template = page_template
     if category_slug:
         category = get_object_or_404(Category, slug=category_slug)
         products = products.filter(category=category)
 
-    return render(request, 'blog/list.html', {
+    return render(request, template, {
         'category': category,
         'categories': categories,
-        'products': products
-
+        'products': products,
+        'page_template': page_template
     })
 
 
@@ -69,5 +72,7 @@ def ProductDetail(request, id, slug):
         form.save(commit=True)
 
     return render(request, 'blog/detail.html',
-                  {'product': product, 'cart_product_form': cart_product_form, 'form': form})
+                  {'product': product,
+                   'cart_product_form': cart_product_form,
+                   'form': form})
 

@@ -7,8 +7,9 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link rel="stylesheet" href="{% static 'css/style.css' %}">
 		<link rel="stylesheet" href="{% static 'css/reset.css' %}">
+		<link rel="stylesheet" href="{% static 'css/footer.css' %}">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-		<link rel="shortcut icon" href="{% static 'images/logo.ico' %}">
+		{% block logo %}{% include "blog/ico.html" %}{% endblock %}
 	</head>
 
 	<body>
@@ -35,14 +36,14 @@
 				<h1 id="MainH1">Продукты на любой вкус</h1>
 				<p id="MainP">El'Market экономит ваше время, доставляя продукты прямо к вашей двери. Бесплатная доставка на сумму от 20 белорусских рублей в пределах Минска.</p>
 				<div id="links">
-					<a href="{% url 'blog:ProductList' %}" class="buttonA">В каталог</a>
-					<a href="#" class="underlinedA">В чем соль?</a>
+					<center><a href="{% url 'blog:ProductList' %}" class="buttonA">В каталог</a></center>
 				</div>
 
-				{% block footer %}{% include "blog/footer.html" %}{% endblock %}
+
 
 			</div>
 
 		</div>
+		{% block footer %}{% include "blog/footer.html" %}{% endblock %}
 		</body>
 	</html>

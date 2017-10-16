@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="{% static 'css/checkout.css' %}">
 	<link rel="stylesheet" href="{% static 'css/reset.css' %}">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-	<link rel="shortcut icon" href="{% static 'images/favicon_blue.png' %}">
+	<link rel="shortcut icon" href="{% static 'images/logo.ico' %}">
 </head>
 <body>
 <script>
@@ -18,7 +18,7 @@ $('#dfjgldfhgkjf').inputmask({"mask": "(999) 999-9999"});
 <div class="content_section">
 	<div id="topNav">
 		<a href="{% url 'blog:index' %}" id="logoLeft">
-			<img src="{% static 'images\index\logo111.svg'%}">
+			<img src="{% static 'images\60x60.png'%}">
 		</a>
 		<div id="topNavBlock">
 			<a href="{% url 'blog:index' %}" class="topNavA">Главная</a>
@@ -37,7 +37,7 @@ $('#dfjgldfhgkjf').inputmask({"mask": "(999) 999-9999"});
 				</div>
 
 				<div class="inputBlock">
-					{% render_field form.phone class+="checkoutInput" placeholder="+XXX (XX) XXX-XX-XX" id="phone" %}
+					{% render_field form.phone class+="checkoutInput" placeholder="+375 (XX) XXX-XX-XX" id="phone" %}
 					<label class="checkoutLabel" for="phone">Контактный телефон</label>
 				</div>
 			</div>
@@ -46,15 +46,15 @@ $('#dfjgldfhgkjf').inputmask({"mask": "(999) 999-9999"});
 				<div id="address1stLine">
 					<h2 class="checkoutH2">Адрес</h2>
 					<div class="inputBlock">
-						{% render_field form.country class+="checkoutInput" placeholder="Страна" id="country" %}
+						{% render_field form.country class+="checkoutInput" type="readonly" value="Беларусь" id="country"%}
 						<label class="checkoutLabel" for="country">Страна:</label>
 					</div>
 					<div class="inputBlock">
-						{% render_field form.area class+="checkoutInput" placeholder="Область" id="area" %}
+						{% render_field form.area class+="checkoutInput" type="readonly" value="Минская" id="area"%}
 						<label class="checkoutLabel" for="area">Область:</label>
 					</div>
 					<div class="inputBlock">
-						{% render_field form.city class+="checkoutInput" placeholder="Город" id="city" %}
+						{% render_field form.city class+="checkoutInput" type="readonly" value="Минск" id="city" %}
 						<label class="checkoutLabel" for="city">Город:</label>
 					</div>
 				</div>
@@ -80,9 +80,9 @@ $('#dfjgldfhgkjf').inputmask({"mask": "(999) 999-9999"});
 					{% render_field form.size class+="checkoutInput" placeholder="Размер" id="size" %}
 				</div>
 				{% csrf_token %}
-				<input type="submit" form="pictureDetails" id="preorderButton" value="Сделать предзаказ">
+				<input type="submit" form="pictureDetails" id="preorderButton" value="Подтвердить заказ">
 				<label id="preorderButtonLabel" for="preorderButton">
-					Сделать предзаказ
+					Подтвердить заказ
 				</label>
 				<p id="preorderDesc">Мы свяжемся с Вами, когда Ваш заказ будет готов к отправке.</p>
 			</div>
@@ -102,9 +102,9 @@ $('#dfjgldfhgkjf').inputmask({"mask": "(999) 999-9999"});
 		<div class="orderDetails">
 			<p>{{ product.name }}</p>
 			<p>{{ product.category }}</p>
-			<p>{{ item.size }}</p>
+			<p>{{ item.quantity }}</p>
 		</div>
-		<p class="orderPrice"><span>{{ item.price }}</span>&nbsp; р.</p>
+		<p class="orderPrice"><span>{{ item.total_price }}</span>&nbsp; р.</p>
 	</div>
 	{% endwith %}
 	{% endfor %}

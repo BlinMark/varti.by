@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS  # для бесконечного скролла
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
@@ -46,6 +46,7 @@ INSTALLED_APPS = (
     'orders',
     'widget_tweaks',
     'gtm',
+    'endless_pagination',
 )
 
 GOOGLE_TAG_ID = 'GTM-WBVQW6L'
@@ -140,3 +141,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # корзина пользователя
 CART_SESSION_ID = 'cart'
+
+TEMPLATE_CONTEXT_PROCESSORS += (
+    'django.core.context_processors.request',
+)

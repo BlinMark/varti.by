@@ -3,12 +3,12 @@
 <html>
 <head>
 	{% gtm %}
-	<title>Varti</title>
+	<title>El'Market</title>
  	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="stylesheet" href="{% static 'css/about.css' %}">
 	<link rel="stylesheet" href="{% static 'css/reset.css' %}">
-	<link rel="shortcut icon" href="{% static 'images/logo.ico' %}"/>
+	{% block logo %}{% include "blog/ico.html" %}{% endblock %}
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 </head>
 <body>
@@ -26,81 +26,6 @@
 			<a href="" class="topNavA navActive">Кто мы?</a>
 		</div>
 	</div>
-
-			<h1 id="AboutH1">
-				<img src="{% static 'images\index\logo111.svg'%}" width="150px" height="150px">
-				<br>
-				Хит сезона
-			</h1>
-
-
-			<div id="pointsBlock">
-				<div class="pointInside">
-					<h2 class="pointH2">Бесплатная доставка</h2>
-					<p class="pointP">Бесплатная доставка по всей Беларуси вне зависимости от размера заказа. Мы позаботимся о том, чтобы заказ был доставлен в кратчайшие сроки и в наилучшем виде.</p>
-				</div>
-				<div class="pointInside">
-					<h2 class="pointH2">Качественные материалы</h2>
-					<p class="pointP">Для того, чтобы картины оставались долговечными и точно передавали все их оттенки и краски, используются пигментные чернила и фотобумага премиумной линейки Epson.</p>
-				</div>
-				<div class="pointInside">
-					<h2 class="pointH2">Только лучшие работы</h2>
-					<p class="pointP">Мы старательно отобрали самые яркие и выразительные фотографии, среди которых даже искушенные ценители искусства найдут работы, которые придутся им по душе.</p>
-				</div>
-			</div>
-			<div id="smallStoryBlock">
-				<h2 id="smallStoryH2">Почему мы?</h2>
-				<p>Varti – это проект, основанный теми, кто умеет видеть прекрасное и испытывает потребность делиться красотой с окружающим миром.
-Наша компания состоит из художников, которые создают неповторимые творения, и людей, которые тщательно отбирают самые лакомые кусочки искусства, чтобы Вы могли наслаждаться ими в любое время. Вместе мы – слаженная команда, полная решимости добавить щепотку вдохновения в рецепт каждого Вашего дня.
-</p>
-
-			</div>
-
-			<div id="TeamMembers">
-				<div class="memberBlock">
-					<h2 class="memberName">Николай Костин</h2>
-					<div class="memberPhoto" style="background-image: url(https://pp.userapi.com/c624417/v624417160/3aff/FxwSV0UtT-4.jpg)"></div>
-					<p class="memberJob">Курьер</p>
-					<div class="memberCharacteristic">
-						<p class="charName">Любимое блюдо:</p>
-						<p class="charDesc">Пицца</p>
-					</div>
-					<div class="memberCharacteristic">
-						<p class="charName">Интересный факт:</p>
-						<p class="charDesc">Диплом 3й степени по математике в 5м классе</p>
-					</div>
-				</div>
-				<div class="memberBlock">
-					<h2 class="memberName">Ярослава Миронова</h2>
-					<div class="memberPhoto" style="background-image: url(https://pp.userapi.com/c636521/v636521561/504d4/mwO1pfxiG9s.jpg)"></div>
-					<p class="memberJob">Менеджер по продажам</p>
-
-					<div class="memberCharacteristic">
-						<p class="charName">Хобби:</p>
-						<p class="charDesc">Качалочка</p>
-					</div>
-					<div class="memberCharacteristic">
-						<p class="charName">Любимый цвет:</p>
-						<p class="charDesc">Розовый</p>
-					</div>
-
-				</div>
-				<div class="memberBlock">
-					<h2 class="memberName">Павел Моисеев</h2>
-					<div class="memberPhoto" style="background-image: url(https://pp.userapi.com/c323320/v323320855/5f22/PDUHTrhviOU.jpg)"></div>
-					<p class="memberJob">Художник</p>
-
-					<div class="memberCharacteristic">
-						<p class="charName">Любимое теле-шоу:</p>
-						<p class="charDesc">Реальные пацаны</p>
-					</div>
-					<div class="memberCharacteristic">
-						<p class="charName">Главное в человеке:</p>
-						<p class="charDesc">Ровность</p>
-					</div>
-
-				</div>
-			</div>
 
 			<div id="toCatalog">
 				<a href="{% url 'blog:ProductList' %}" class="buttonA">В каталог</a>

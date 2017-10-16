@@ -277,7 +277,7 @@ select{
   font-size: 14px;
   color: rgba(0,0,0,.5);
   font-weight: 400;
-  display:block;
+  display:inline-block;
 }
 select:hover{
   color: rgba(0,0,0,.7);
@@ -366,7 +366,7 @@ select:hover{
 #submitButtons{
 	width: 200px;
 	height: 40px;
-	margin: 25px auto 10px auto;
+	margin: auto;
 }
 #submitButtons input[type="submit"]{
 	display: none;
@@ -387,6 +387,7 @@ select:hover{
 	height: 26px;
 	width: 200px;
 	padding-top: 14px;
+  margin-top: 16px;
 	transition: .3s;
 	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
@@ -808,6 +809,12 @@ select:hover{
   font-size: 16px;
   line-height: 24px;
 }
+  #submitButtons{
+	   width: 150px;
+   }
+  #submitButtons label[for="buttonBuy"]{
+    width: 150px;
+  }
 }
 
 
@@ -968,7 +975,7 @@ select:hover{
 	float: left;
 	margin:0;
 	background: none;
-	visibility: none;
+	visibility: hidden;
 }
 
 #left, #right{
@@ -1001,7 +1008,6 @@ select:hover{
 
 @media screen and (max-width: 750px){
 #videoLinkDesc::before{
-	content: '���� �������:';
 	position: relative;
 	top: 100px;
 	text-align: center;
@@ -1013,7 +1019,6 @@ select:hover{
 	font-size: 16px;
 }
 #submitButtons::before{
-	content: '67 �.';
 	text-align: center;
 	display: block;
 	width: 100px;

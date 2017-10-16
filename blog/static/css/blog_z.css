@@ -5,16 +5,17 @@ html, html a {
 }
 
 body{
+height: calc(100vh + 255px);
 font:16px "Open sans";
 -webkit-overflow-scrolling: touch;
 
-		overflow: hidden;
+		overflow-x: hidden;
 		min-width: 300px;
 }
 
 ::selection {
     color: #fff;
-    background: #2164f4;
+    background: #ff8c00;
 }
 
 body::-webkit-scrollbar {
@@ -27,11 +28,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #2164f4;
+  background-color: #ff8c00;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #4781ff;
+  background-color: #ff8c00;
 }
 body::-webkit-scrollbar-track:hover {
     background-color: rgba(0,0,0,.1);
@@ -43,14 +44,13 @@ body::-webkit-scrollbar-track:hover {
 }
 
 #logoLeft{
-  display: block;
-  width: 70px;
-  height: 70px;
-  float: left;
-  margin:10px 100px;
-  background: url(img/index/logo111.svg);
-  background-size: 150%;
-  background-position: center;
+	display: block;
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin:15px 100px;
+	background-size: 100%;
+	background-position: center;
 }
 
 #topNav{
