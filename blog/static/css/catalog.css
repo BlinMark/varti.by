@@ -269,6 +269,7 @@ body::-webkit-scrollbar-track:hover {
 /*-------------------END-------------------*/
 /*Кнопка загрузки товаров*/
 .endless_more{
+
   display: inline-block;
 	margin: 0 auto;
 	color: #231f20;
@@ -303,7 +304,7 @@ body::-webkit-scrollbar-track:hover {
 /*Nuzhno shtobi schitalo height v zavisimosti ot kolichestva kartinok*/
 #catalogItems{
   width: 1280px;
-  height: 758px;
+  height: auto;
   display: block;
 }
 .catalogItemBlock{
@@ -394,14 +395,13 @@ body::-webkit-scrollbar-track:hover {
 }
   #catalogItems{
   width: 960px;
-  height: 1740px;
+  height: auto;
   margin: 0 auto;
 }
 
 .catalogItemBlock{
-  width: 300px;
-  height: 420px;
-  margin-right: 30px;
+  width: 192px;
+  height: 260px;
 }
 
 .catalogItemBlock:nth-child(3n+3){
@@ -412,13 +412,13 @@ body::-webkit-scrollbar-track:hover {
   font-size: 13px;
 }
 .catalogItem{
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 .catalogItemName{
   text-align: center;
-  width: 250px;
+  width: 192px;
   margin:0 auto;
   font-weight: 700;
   font-size: 16px;
@@ -505,8 +505,9 @@ body::-webkit-scrollbar-track:hover {
 }
   #catalogItems{
   width: 630px;
-  height: 2620px;
+  height: auto;
   margin: 0 auto;
+  margin-top:80px;
 }
 .catalogItemBlock:nth-child(2n+2){
   margin: 0 0 20px 0 ;}
@@ -600,8 +601,10 @@ body::-webkit-scrollbar-track:hover {
 
 @media screen and (max-width: 710px){
   .content_section{
-    padding-top: 50px;
+    top: 0px;
+    padding-top: 0;
   	margin: 0 auto;
+    display: block;
   }
 #topNav{
   width: inherit;
@@ -663,14 +666,16 @@ body::-webkit-scrollbar-track:hover {
 }
 
 #catalogItems{
+
   width: 400px;
   height: auto;
   margin: 0 auto;
+  margin-top: 370px;
 }
 
 .catalogItemBlock{
   width: 400px;
-  height: 520px;
+  height: 570px;
   margin:0;
 }
 
@@ -688,35 +693,37 @@ body::-webkit-scrollbar-track:hover {
   font-size: 16px;
   line-height: 24px;
 }
-
-
-
-
+.endless_more{
+  position: relative;
+  animation: none;
+  bottom: 55px;
+}
 
 #catalogNav{
-  width: 455px;
-  height: auto;
+  width: 100vw;
   background: none;
   position: absolute;
   background: none;
-  top: 20px;
-  left: calc(50vw - 200px);
+  top: 0;
+  left: 0;
   z-index: 3;
+  background-color: #231f20;
 }
 #catalogNav::before{content: none;}
 .catalogNavA{
-  display: block;
-  height: 25px;
-  padding: 3px;
+  display: inline-block;
+  height: 20px;
+  width: auto;
+  padding: 25px;
   float: left;
-  text-align: left;
+  text-align: center;
   font:16px "Open sans";
   font-weight: 400;
   text-decoration: none;
   color: rgba(0,0,0,.4);
   transition: .2s;
-  margin: 0 3px 3px 3px;
-  background-color: none;
+  margin: 0, auto;
+  color: rgba(255,140,0,.8);
 }
 
 .catalogNavAActive{
@@ -728,7 +735,7 @@ body::-webkit-scrollbar-track:hover {
 }
 
 #catalogNavBlock{
-  display: block;
+  display: inline-block;
   height: inherit;
   width: inherit;
   float: left;
@@ -801,6 +808,7 @@ body::-webkit-scrollbar-track:hover {
   width: 300px;
   height: 5180px;
   margin: 0 auto;
+  margin-top: 450px;
 }
 
 .catalogItemBlock{
@@ -829,12 +837,18 @@ body::-webkit-scrollbar-track:hover {
 #catalogNav{
   width: 300px;
   height: auto;
-  left: calc(50vw - 150px);
+  left: calc(50vw - 250px);
+  border-right: 100px solid;
+  border-left: 100px solid;
+  border-color: #231f20;
 }
 .catalogNavA{
-  margin: 0 0 15px 0;
+  position: relative;
+  width: 90%;
+  display: block;
+  margin: 0, calc(50vw);
   height: 25px;
-  padding-top:5px;
+  padding:15px;
   font:15px "Open sans";
 }
 
@@ -886,7 +900,7 @@ body::-webkit-scrollbar-track:hover {
 #catalogNav{
   width: 250px;
   height: auto;
-  left: calc(50vw - 125px);
+  left: calc(50vw - 225px);
 }
 .catalogNavA{
   margin: 0 0 15px 0;

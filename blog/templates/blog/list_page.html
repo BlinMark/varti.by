@@ -1,9 +1,9 @@
 {% load endless %}
 
-{% paginate 10 products %}
+{% paginate 15 products %}
 
 
-  <h1>{% if category %}{{ category.name }}{% else %}{% endif %}</h1>
+
   <div class="items row">
 
     {% for product in products %}

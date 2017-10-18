@@ -497,7 +497,7 @@ body::-webkit-scrollbar-track:hover {
 	}
 
   body, #right{
-		height: 955px;
+		height: auto;
 	}
 
   #left{
@@ -505,7 +505,7 @@ body::-webkit-scrollbar-track:hover {
 	}
 
 	#MainH1{
-    margin: 175px auto 0 auto;
+    margin: 100px auto 0 auto;
   }
 }
 
