@@ -87,7 +87,11 @@ body::-webkit-scrollbar-track:hover {
   transition: .3s;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
-
+.catImage{
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 /*script end*/
 
 #topNav::before{
@@ -303,6 +307,8 @@ body::-webkit-scrollbar-track:hover {
 /*-------------------END-------------------*/
 /*Nuzhno shtobi schitalo height v zavisimosti ot kolichestva kartinok*/
 #catalogItems{
+  position: relative;
+  top: 50px;
   width: 1280px;
   height: auto;
   display: block;
@@ -876,7 +882,7 @@ body::-webkit-scrollbar-track:hover {
 @media screen and (max-width: 340px){
   #catalogItems{
   width: 200px;
-  height: 5180px;
+  height: auto;
 }
 
 .catalogItemBlock{
@@ -893,8 +899,17 @@ body::-webkit-scrollbar-track:hover {
   width: 200px;
 }
 
+.catalogNavA{
+  position: absolute;
+  visibility: hidden;
+}
 
-
+.catImage{
+  display: inline-block;
+  visibility: visible;
+  height: 122px;
+  width: 122px;
+}
 
 
 #catalogNav{
@@ -913,12 +928,10 @@ body::-webkit-scrollbar-track:hover {
   color: rgba(0,0,0,.7);
 }
 
-
 #catalogNavBlock{
   height: inherit;
   width: inherit;
 }
-
 
 #navSearch{
   width: 150px;

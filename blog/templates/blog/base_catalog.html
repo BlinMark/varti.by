@@ -50,6 +50,7 @@
 				{% for cat in categories %}
 					<a href=""{% if category.slug == cat.slug %} class="selected" {% endif %}></a>
 					<a href="{{ cat.get_absolute_url }}" class="catalogNavA">{{ cat.name }}</a>
+					<a href="{{ cat.get_absolute_url }}"><img src="{% if cat.image %}{{ cat.image.url }}{% else %}{% static "img/no-image.jpg"%}{% endif %}" class="catImage"></img></a>
 				{% endfor %}
 			</div>
 		</div>

@@ -47,6 +47,7 @@ class Author(models.Model):
 class Category(models.Model):
     name = models.CharField(max_length=200, db_index=True)
     slug = models.SlugField(max_length=200, db_index=True, unique=True)
+    image = models.ImageField(upload_to='products/%Y/%m/%d/', blank=True, verbose_name="Изображение товара")
 
     class Meta:
         ordering = ['name']
