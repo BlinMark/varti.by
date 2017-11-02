@@ -106,7 +106,7 @@ body {
   width: 70%;
   margin: 0 auto;
 }
-.card1{
+.card{
   width: 560px;
 }
 #sidenav-overlay{
@@ -151,5 +151,12 @@ body {
   .news-conteiner{
     width: 100%;
     margin: 0 auto;
+  }
+  .card{
+    width: 100vw;
+  }
+  iframe{
+    width: 100vw;
+    height: auto;
   }
 }
