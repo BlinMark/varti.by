@@ -10,6 +10,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200, verbose_name="Название")
     # text = models.TextField()
     text = RichTextUploadingField(config_name='default')  # текстовый редактор
+    full_text = RichTextUploadingField(config_name='default')
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
 
@@ -47,7 +48,6 @@ class Author(models.Model):
 class Category(models.Model):
     name = models.CharField(max_length=200, db_index=True)
     slug = models.SlugField(max_length=200, db_index=True, unique=True)
-    image = models.ImageField(upload_to='products/%Y/%m/%d/', blank=True, verbose_name="Изображение товара")
 
     class Meta:
         ordering = ['name']

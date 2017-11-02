@@ -3,7 +3,7 @@
 <head>
 	<title>El'Market</title>
  	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="stylesheet" href="{% static 'css/about.css' %}">
 	<link rel="stylesheet" href="{% static 'css/footer.css' %}">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,17 +12,8 @@
 	{% block logo %}{% include "blog/ico.html" %}{% endblock %}
 </head>
 <body>
-	<script type="text/javascript">
-		$(document).ready(function)() {
-			var preloder = $('#preloder'),
-				imageCount = $('img').length;
-			console.log(imageCount);
-		});
-	</script>
-
-
 	<div class="navbar-fixed">
-		<nav class="nav">
+		<nav class="nav nav-down">
 			<div class="nav-wrapper">
 				<a href="{% url 'blog:index' %}" class="brand-logo">El'Market</a>
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -54,16 +45,17 @@
 	<script>
 		$(function(){
 			$(window).scroll(function() {
-				if($(this).scrollTop() >= 320) {
-				$('#topNav').addClass('topNav-up');
-				$('#topNav').removeClass('topNav-down');
+				if($(this).scrollTop() >= 300) {
+				$('nav').addClass('nav-up');
+				$('nav').removeClass('nav-down');
 				$('#catalogNav').addClass('catalogNav-up');
 				$('#catalogNav').removeClass('catalogNav-down');
+
 				}
 
 				else{
-				$('#topNav').removeClass('topNav-up');
-				$('#topNav').addClass('topNav-down');
+				$('nav').removeClass('nav-up');
+				$('nav').addClass('nav-down');
 				$('#catalogNav').removeClass('catalogNav-up');
 				$('#catalogNav').addClass('catalogNav-down');
 				}

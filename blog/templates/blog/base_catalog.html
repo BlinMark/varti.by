@@ -6,7 +6,7 @@
 
 
 		<div id="catalogNav" class="catalogNav-down">
-			<div id="catalogNavBlock" {% if not category %} class="selected" {% endif %}>
+			<div class="catalogNavBlock" {% if not category %} class="selected" {% endif %}>
 				<a href="{% url "blog:ProductList" %}" class="catalogNavA">Все</a>
 				{% for cat in categories %}
 					<a href=""{% if category.slug == cat.slug %} class="selected" {% endif %}></a>
@@ -22,5 +22,5 @@
 		</div>
 
 
-	
+
 {% endblock content %}
