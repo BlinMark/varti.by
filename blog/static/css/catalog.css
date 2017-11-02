@@ -289,7 +289,6 @@ body::-webkit-scrollbar-track:hover {
 	background: #ff8c00;
 	transition: .2s;
 	border-radius: 3px;
-
   animation:blinking 3s infinite;
 }
 .endless_more:hover{

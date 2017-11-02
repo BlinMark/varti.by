@@ -1,49 +1,22 @@
-{% load staticfiles %}
-{% load gtm_tags %}
-<html>
-	<head>
-		{% gtm %}
-		<title>El'Market</title>
-		<meta name="viewport" content="width=device-width, user-scalable=no">
-		<link rel="stylesheet" href="{% static 'css/style.css' %}">
-		<link rel="stylesheet" href="{% static 'css/reset.css' %}">
-		<link rel="stylesheet" href="{% static 'css/footer.css' %}">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-		{% block logo %}{% include "blog/ico.html" %}{% endblock %}
-	</head>
+{% extends 'blog/new-base.html' %}
+{% load staticfiles%}
 
-	<body>
-		<?php include_once("analyticstracking.php") ?>
-		<div class="content_section">
-			<div id="topNav">
-				<a href="{% url 'blog:index' %}" id="logoLeft">
-					<img src="{% static 'images\60x60.png'%}">
-				</a>
-				<div id="topNavBlock">
-					<a href="" class="topNavA navActive">Главная</a>
-					<a href="{% url 'blog:ProductList' %}" class="topNavA">Каталог</a>
-					<a href="{% url 'blog:post_list' %}" class="topNavA">Статьи</a>
-					<a href="{% url 'blog:about' %}" class="topNavA">Кто мы?</a>
-				</div>
-			</div>
+{% block content %}
 
-			<div id="left">
-				<div id="devider_left"></div>
-				<div id="picture_left"></div>
-			</div>
+<center>
+<div class="card card1">
+	<div class="card-image waves-effect waves-block waves-light">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Zqn41lMIGg8" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="card-content">
+		<span class="card-title activator grey-text text-darken-4">Good breakfast is a good day</span>
+	</div>
+</div>
+</center>
 
-			<div id="right">
-				<h1 id="MainH1">Продукты на любой вкус</h1>
-				<p id="MainP">El'Market экономит ваше время, доставляя продукты прямо к вашей двери. Бесплатная доставка на сумму от 20 белорусских рублей в пределах Минска.</p>
-				<div id="links">
-					<center><a href="{% url 'blog:ProductList' %}" class="buttonA">В каталог</a></center>
-				</div>
+
+<center><a href="{% url 'blog:ProductList' %}" class="waves-effect waves-light btn">Catalog</a></center>
 
 
 
-			</div>
-
-		</div>
-		{% block footer %}{% include "blog/footer.html" %}{% endblock %}
-		</body>
-	</html>
+{% endblock content %}

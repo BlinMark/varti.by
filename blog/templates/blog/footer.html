@@ -1,15 +1,26 @@
 
-<div id="footer">
-
-  <div id="contacts">
-    <center>
-    <p>Developed by Mark Blin<br>
-      anwardo13@gmail.com<br>
-      <br>El'Market 2017&#169;<br>
-      <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-      <script src="//yastatic.net/share2/share.js"></script>
-      <div class="ya-share2" data-services="vkontakte,facebook,telegram"></div>
-    </p>
-    </center>
+<footer class="page_footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Belarusian National Technical University</h5>
+        <p class="grey-text text-lighten-4">Faculty of Information Technologies and Robotics</p>
+        <p class="grey-text text-lighten-4">Information Technologies Software Support</p>
+        <p class="grey-text text-lighten-4">Mark Blin</p>
+      </div>
+      <div class="col l2 offset-l4 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="{% url 'blog:index' %}">Home</a></li>
+          <li><a class="grey-text text-lighten-3" href="{% url 'blog:ProductList' %}">Catalog</a></li>
+          <li><a class="grey-text text-lighten-3" href="{% url 'blog:about' %}">About</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
+  <div class="footer_copyright">
+    <div class="container">
+      © 2017 EL'Market All Rights Reserved
+    </div>
+  </div>
+</footer>

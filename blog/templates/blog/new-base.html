@@ -1,0 +1,74 @@
+{% load staticfiles %}
+<html>
+<head>
+	<title>El'Market</title>
+ 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="{% static 'css/about.css' %}">
+	<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	{% block logo %}{% include "blog/ico.html" %}{% endblock %}
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function)() {
+			var preloder = $('#preloder'),
+				imageCount = $('img').length;
+			console.log(imageCount);
+		});
+	</script>
+
+
+	<div class="navbar-fixed">
+		<nav class="nav">
+			<div class="nav-wrapper">
+				<a href="{% url 'blog:index' %}" class="brand-logo">El'Market</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="{% url 'blog:index' %}">Home</a></li>
+					<li><a href="{% url 'blog:ProductList' %}">Catalog</a></li>
+					<li><a href="{% url 'blog:about' %}">About</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="{% url 'blog:index' %}">Home</a></li>
+					<li><a href="{% url 'blog:ProductList' %}">Catalog</a></li>
+					<li><a href="{% url 'blog:about' %}">About</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="content_section">
+		{% block content %}
+		{% endblock %}
+	</div>
+
+	{% block footer %}{% include "blog/footer.html" %}{% endblock %}
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		$(".button-collapse").sideNav();
+	</script>
+	<script>
+		$(function(){
+			$(window).scroll(function() {
+				if($(this).scrollTop() >= 320) {
+				$('#topNav').addClass('topNav-up');
+				$('#topNav').removeClass('topNav-down');
+				$('#catalogNav').addClass('catalogNav-up');
+				$('#catalogNav').removeClass('catalogNav-down');
+				}
+
+				else{
+				$('#topNav').removeClass('topNav-up');
+				$('#topNav').addClass('topNav-down');
+				$('#catalogNav').removeClass('catalogNav-up');
+				$('#catalogNav').addClass('catalogNav-down');
+				}
+			});
+		});
+	</script>
+</body>
+</html>

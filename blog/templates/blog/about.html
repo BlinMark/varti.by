@@ -1,41 +1,24 @@
-{% load staticfiles %}
-{% load gtm_tags %}
-<html>
-<head>
-	{% gtm %}
-	<title>El'Market</title>
- 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<link rel="stylesheet" href="{% static 'css/about.css' %}">
-	<link rel="stylesheet" href="{% static 'css/reset.css' %}">
-	{% block logo %}{% include "blog/ico.html" %}{% endblock %}
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-</head>
-<body>
-	<?php include_once("analyticstracking.php") ?>
-<div class="content_section">
-
-	<div id="topNav">
-		<a href="{% url 'blog:index' %}" id="logoLeft">
-			<img src="{% static 'images\60x60.png'%}">
-		</a>
-		<div id="topNavBlock">
-			<a href="{% url 'blog:index' %}" class="topNavA">Главная</a>
-			<a href="{% url 'blog:ProductList' %}" class="topNavA">Каталог</a>
-			<a href="{% url 'blog:post_list' %}" class="topNavA">Статьи</a>
-			<a href="" class="topNavA navActive">Кто мы?</a>
-		</div>
-	</div>
-
-			<div id="toCatalog">
-				<a href="{% url 'blog:ProductList' %}" class="buttonA">В каталог</a>
-			</div>
+{% extends 'blog/new-base.html' %}
 
 
+{% block content %}
 
-			{% block footer %}{% include "blog/footer.html" %}{% endblock %}
 
-	</div>
-</div>
-</body>
-</html>
+{% for post in posts %}
+  <div class="row">
+    <div class="news-conteiner">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <p class="p-news">{{ post.published_date }}</p>
+          <span class="card-title">{{ post.title }}</span>
+          <p>{{ post.text|safe }}</p>
+        </div>
+        <div class="card-action">
+          <a href="{% url 'blog:post_detail' pk=post.pk %}">More deteil</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+{% endblock content %}

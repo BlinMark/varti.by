@@ -38,7 +38,7 @@ body {
 
     ::selection {
         color: #fff;
-        background: #2164f4;
+        background: var(--main--bg-color);
     }
 
     body::-webkit-scrollbar {
@@ -358,56 +358,7 @@ body {
     }
 
 
-    #footer{
-      width: 440px;
-      height: 180px;
-      margin-left: 640px;
-    }
-    #contacts{
-      width: 220px;
-      float: left;
-    }
-    #contacts h2{
-      font-size: 18px;
-      color: rgba(0,0,0,.9);
-      text-transform: uppercase;
-      font-weight: 600;
-      margin-bottom: 50px;
-    }
-    #contacts p{
-      font-size: 14px;
-      font-weight: 400;
-      color: rgba(0,0,0,.8);
-      line-height: 25px;
-    }
 
-    #social{
-      width: 200px;
-      margin-left:20px;
-      float: left;
-    }
-    #socialL, #socialR{
-      width: 100px;
-      float: left;
-    }
-    #social h2{
-      font-size: 18px;
-      color: rgba(0,0,0,.9);
-      text-transform: uppercase;
-      font-weight: 600;
-      margin-bottom: 50px;
-    }
-    .socialA{
-      font-size: 14px;
-      font-weight: 400;
-      color: rgba(0,0,0,.5);
-      line-height: 25px;
-    }
-    .socialA:hover{
-      font-weight: 400;
-      color: #2164f4;
-      line-height: 25px;
-    }
 
     /*MEDIA*/
 
@@ -507,21 +458,6 @@ body {
       font-size: 13px;
     }
 
-
-
-
-
-
-
-
-
-
-
-      #footer{
-      margin: 0 auto;
-      position: relative;
-      top: 100px;
-      }
 
 
     #topNav{
@@ -787,58 +723,11 @@ body {
       margin: 120px 0 200px 50vw;
     }
 
-
-
-
-
-
-
-
-    #footer{
-        width: 210px;
-        height: 290px;
-        margin-bottom: 50px;
-      }
-      #contacts, #social{
-        width: 210px;
-        display: block;
-        float: left;
-        margin: 0 auto;
-      }
-    #footer div h2,p{
-      text-align: center;
-    }
     #loaderLogo{
       margin: 50px auto;
     }
 
-    #social{
-      width: inherit;
-      margin: 0 auto;
-      float: none;
-      display: block;
-      padding: 0;
-    }
 
-    #socialL, #socialR{
-      width: 50%;
-      float: left;
-      display: block;
-      text-align: center;
-    }
-    #socialL br, #socialR br{
-      visibility: hidden;
-    }
-    #social h2{
-      visibility: hidden;
-      margin: 0 0 10px 0;
-    }
-    .socialA{
-      font-size: 14px;
-      font-weight: 400;
-      color: rgba(0,0,0,.5);
-      line-height: 25px;
-    }
     }
     @media screen and (max-width: 480px){
 

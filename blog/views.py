@@ -7,9 +7,9 @@ from .forms import OrderCreateForm
 
 
 # Страница всех новостей
-def post_list(request):
+def about(request): #post_list
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/post_list.html', {'posts': posts})
+    return render(request, 'blog/about.html', {'posts': posts}) #'blog/post_list.html'
 
 
 # Страница конкретной новости
@@ -26,7 +26,7 @@ def index(request):
 
 
 # О нас
-def about(request):
+def post_list(request): #about
     about_page = Post.objects.all().order_by('-pub_date')
     context = {'about_page': about_page}
     return render(request, 'blog/about.html', {'about': about})

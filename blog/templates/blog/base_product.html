@@ -1,15 +1,13 @@
 {% load staticfiles %}
-{% load gtm_tags %}
-{% load widget_tweaks %}
 <html>
 <head>
-	{% gtm %}
 	<title>{% block title %}{% endblock %}</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="stylesheet" href="{% static 'css/product.css' %}">
   <link rel="stylesheet" href="{% static 'css/reset.css' %}">
-	<link rel="shortcut icon" href="{% static 'images/favicon_blue.png' %}">
+	<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+	{% block logo %}{% include "blog/ico.html" %}{% endblock %}
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<style>
    .descr { visibility: hidden; }
@@ -17,61 +15,47 @@
 </head>
 <body>
 	<?php include_once("analyticstracking.php") ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-
-
-<div class="content_section">
-
-	<div id="topNav">
-		<a href="{% url 'blog:index' %}" id="logoLeft">
-			<img src="{% static 'images\60x60.png'%}">
-		</a>
-		<div id="topNavBlock">
-			<a href="{% url 'blog:index' %}" class="topNavA">Главная</a>
-			<a href="{% url 'blog:ProductList' %}" class="topNavA">Каталог</a>
-			<a href="{% url 'blog:post_list' %}" class="topNavA">Статьи</a>
-			<a href="{% url 'blog:about' %}" class="topNavA">Кто мы?</a>
+	<div class="content_section">
+		<div id="topNav">
+			<a href="{% url 'blog:index' %}" id="logoLeft">
+				<img src="{% static 'images\60x60.png'%}">
+			</a>
+			<div id="topNavBlock">
+				<a href="{% url 'blog:index' %}" class="topNavA">Главная</a>
+				<a href="{% url 'blog:ProductList' %}" class="topNavA">Каталог</a>
+				<a href="{% url 'blog:post_list' %}" class="topNavA">Статьи</a>
+				<a href="{% url 'blog:about' %}" class="topNavA">Кто мы?</a>
+			</div>
 		</div>
-	</div>
-	<div id="left">
+		<div id="left">
 			<div id="pictureWithPrice" class="sticky">
 				<div id="mainPicture">
 					<img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "img/no-image.jpg"%}{% endif %}" class="img-responsive">
 				</div>
 			</div>
-	</div>
+		</div>
 
-
-	<div id="right">
+		<div id="right">
 			<p id="authorAndRubric"><a href="{{ product.category.get_absolute_url }}">{{ product.category }}</a></p>
-		<h1 id="PictureName">	<nobr>{{ product.name }} <p id="year">{{ product.price}} руб.</p></nobr></h1>
+			<h1 id="PictureName">	<nobr>{{ product.name }} <p id="year">{{ product.price}} руб.</p></nobr></h1>
 			<p id="year"><span>{{ product.date }}</span></p>
 			<p id="PictureDesc">Какое-то описание</p>
 
 			<form action="{% url "cart:CartAdd" product.id %}" method="post">
-				  <div id="submitButtons">
-			    <center class="descr">{{ cart_product_form }}</center>
+				<div id="submitButtons">
+					<center class="descr">{{ cart_product_form }}</center>
 			    {% csrf_token %}
 					<input type="submit"  id="buttonBuy" value="Добавить в корзину">
 			    <label class="submitButtonLabel" for="buttonBuy">
 			      Добавить в корзину
 			    </label>
 				</div>
-
 			</form>
 
+		</div>
 	</div>
-
-
-
-
-
-
-{% block footer %}{% include "blog/footer.html" %}{% endblock %}
-
-</div>
-
-
+	{% block footer %}{% include "blog/footer.html" %}{% endblock %}
 </body>
 </html>
