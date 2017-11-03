@@ -3,6 +3,7 @@ from django.views.decorators.http import require_POST
 from blog.models import Product
 from .cart import Cart
 from .forms import CartAddProductForm
+from blog import *
 
 
 @require_POST
@@ -14,6 +15,7 @@ def CartAdd(request, product_id):
         cd = form.cleaned_data
         cart.add(product=product, quantity=cd['quantity'],
                  update_quantity=cd['update'])
+
     return redirect('cart:CartDetail')
 
 

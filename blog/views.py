@@ -71,7 +71,7 @@ def ProductDetail(request, id, slug):
         form = OrderCreateForm(request.POST)
         form.save(commit=True)
 
-    return render(request, 'blog/detail.html',
+    return render(request, 'blog/base_product.html',
                   {'product': product,
                    'cart_product_form': cart_product_form,
                    'form': form})

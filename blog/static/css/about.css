@@ -95,7 +95,7 @@ body {
   color: rgb(255,140,0)
 }
 .content_section{
-  min-height: calc(100vh - 327px);
+  min-height: calc(100vh - 374px);
   height: auto;
 }
 .catalogItems{
@@ -112,7 +112,9 @@ body {
 #sidenav-overlay{
   z-index: 0 !important;
 }
-/*---------Кнопка "more" в каталоге-----------*/
+
+
+/*----------------------Кнопка "more" в каталоге---------------------*/
 .endless_more{
   position: relative;
   bottom: 20px;
@@ -144,7 +146,143 @@ body {
     50%{background: rgba(33,37,41, 0.7);}
     100%{background: rgb(33,37,41);}
 }
-/*------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+
+/*---------Кнопка "Добавить в корзину" и "Вернуться назад"-----------*/
+#submitButtons{
+	width: 200px;
+	height: 40px;
+  float: right;
+}
+#submitButtons input[type="submit"]{
+	display: none;
+}
+.submitButtonLabel{
+  padding-top: 14px;
+	display: inline-block;
+  font-size: 12px;
+	line-height: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 3px;
+}
+
+#submitButtons label[for="buttonBuy"]{
+  cursor: pointer;
+	color: #fff;
+	background: rgb(33,37,41);
+	height: 40px;
+	width: 200px;
+	transition: .3s;
+	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+#submitButtons label[for="buttonBuy"]:hover{
+  background: rgba(33,37,41,0.95);
+	box-shadow: 0 10px 30px rgba(0,0,0,.2);
+	text-shadow: 0 0 10px rgba(255,255,255,.2);
+	transition: .5s;
+  animation: none;
+}
+.noView{
+  display: none;
+}
+.card-product{
+  width: 80vw;
+  margin: 0px auto !important;
+}
+
+.price-align{
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  font-weight: 700;
+}
+/*-------------------------------------------------------------------*/
+
+
+/*------------------------------кнопка-------------------------------*/
+.button{
+  top: 16px;
+  position: absolute;
+  display: inline-block;
+	color: white !important;
+	padding-top: 14px;
+	width: 200px;
+	height: 40px;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	background: rgb(33,37,41);
+	transition: .3s !important;
+	border-radius: 3px;
+}
+.button:hover{
+  background: rgba(33,37,41,0.95);
+	box-shadow: 0 10px 30px rgba(0,0,0,.2);
+	text-shadow: 0 0 10px rgba(255,255,255,.2);
+	transition: .5s;
+  animation: none;
+}
+/*-------------------------------------------------------------------*/
+.full-width{
+  width: 100% !important;
+}
+.defoult-bg{
+  background-color: rgb(33,37,41) !important;
+}
+.color-white{
+  color: rgb(255, 255, 255);
+}
+.color-orange{
+  color: rgba(255, 171, 64, 1);
+}
+.center{
+  margin: 0px auto;
+}
+#id_quantity{
+  width: 50px !important;
+  height: 30px !important;
+  display: inline-block !important;
+}
+#buttonBuy{
+  float: left;
+  width: 100px;
+  height: 20px;
+}
+#buttonBuy input[type="submit"]{
+  display: none;
+}
+#buttonBuy label[for="buttonBuy"]{
+
+	color: #fff;
+	background: rgb(33,37,41);
+	height: 40px;
+	width: 200px;
+	transition: .3s;
+	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+#buttonBuy label[for="buttonBuy"]:hover{
+  cursor: pointer !important;
+  background: rgba(33,37,41,0.95);
+	box-shadow: 0 10px 30px rgba(0,0,0,.2);
+	text-shadow: 0 0 10px rgba(255,255,255,.2);
+	transition: .5s;
+  animation: none;
+}
+.label{
+  display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 3px;
+}
 
 
 @media screen and (max-height: 665px) and (max-width: 710px){
@@ -155,8 +293,36 @@ body {
   .card1{
     width: 100vw;
   }
+  .card-product{
+    width: 100vw;
+  }
+  .no-img{
+    display: none;;
+    visibility: hidden;
+  }
+  .card-image {
+  }
+  .text-center {
+    text-align: center !important;
+  }
+
   iframe{
     width: 100vw;
     height: auto;
+  }
+  #submitButtons{
+    margin: 0px auto;
+    float: none;
+  }
+  .margin-40px{
+    margin-bottom: 40px !important;
+  }
+  .price-align{
+    position: static;
+  }
+  .button{
+    position: static;
+    margin-right: 0 !important;
+    float: none !important;
   }
 }

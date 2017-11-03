@@ -21,7 +21,25 @@
 					<li><a href="{% url 'blog:index' %}">Home</a></li>
 					<li><a href="{% url 'blog:ProductList' %}">Catalog</a></li>
 					<li><a href="{% url 'blog:about' %}">About</a></li>
+					<li>
+						<div id="cart">
+					    {% with total_items=cart|length %}
+					        {% if cart|length > 0 %}
+											<a href="{% url "cart:CartDetail" %}"
+											class="tooltipped"
+											data-position="bottom" data-delay="50"
+											data-tooltip="More deteil">
+												Your cart: {{ total_items }} items [{{ cart.get_total_price }} BYN]
+											</a>
+
+					         {% else %}
+									 		<a href="#" onclick="Materialize.toast('First add to cart product from catalog', 4000)">Cart is emptya</a>
+					        {% endif %}
+					    {% endwith %}
+					</div>
+				</li>
 				</ul>
+
 				<ul class="side-nav" id="mobile-demo">
 					<li><a href="{% url 'blog:index' %}">Home</a></li>
 					<li><a href="{% url 'blog:ProductList' %}">Catalog</a></li>
