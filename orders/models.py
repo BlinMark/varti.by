@@ -5,7 +5,7 @@ from blog.models import Product
 class Order(models.Model):
     first_name = models.CharField(verbose_name='Имя', max_length=60)
     phone = models.CharField(verbose_name='Телефон', max_length=20)
-    country = models.CharField(verbose_name='Страна', max_length=30)
+    email = models.CharField(verbose_name='Email', max_length=30)
     area = models.CharField(verbose_name='Область', max_length=30, blank=True, null=True)
     city = models.CharField(verbose_name='Город', max_length=30)
     street = models.CharField(verbose_name='Улица', max_length=30)

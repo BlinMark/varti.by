@@ -249,31 +249,7 @@ body {
   height: 30px !important;
   display: inline-block !important;
 }
-#buttonBuy{
-  float: left;
-  width: 100px;
-  height: 20px;
-}
-#buttonBuy input[type="submit"]{
-  display: none;
-}
-#buttonBuy label[for="buttonBuy"]{
 
-	color: #fff;
-	background: rgb(33,37,41);
-	height: 40px;
-	width: 200px;
-	transition: .3s;
-	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-#buttonBuy label[for="buttonBuy"]:hover{
-  cursor: pointer !important;
-  background: rgba(33,37,41,0.95);
-	box-shadow: 0 10px 30px rgba(0,0,0,.2);
-	text-shadow: 0 0 10px rgba(255,255,255,.2);
-	transition: .5s;
-  animation: none;
-}
 .label{
   display: inline-block;
     font-size: 12px;

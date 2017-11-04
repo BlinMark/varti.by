@@ -12,7 +12,12 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS  # для бесконечного скролла
+
+from django.conf.global_settings import TEMPLATES
+
+
+#TEMPLATES[0]['OPTIONS']['context_processors'].insert(0, 'django.core.context_processors.request')
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
@@ -32,7 +37,8 @@ ALLOWED_HOSTS = ['127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = (
-    'django_admin_bootstrapped',  # новая админка
+    # 'django_admin_bootstrapped',  # новая админка
+    'grappelli',  # админка
     'django.contrib.admin',
     'ckeditor',  # текстовый редактор
     'ckeditor_uploader',
@@ -46,7 +52,7 @@ INSTALLED_APPS = (
     'orders',
     'widget_tweaks',
     'gtm',
-    'endless_pagination',
+    'el_pagination',
 )
 
 GOOGLE_TAG_ID = 'GTM-WBVQW6L'
@@ -70,6 +76,13 @@ CKEDITOR_UPLOAD_SLUGIFY_FILENAME = False
 CKEDITOR_RESTRICT_BY_USER = True
 CKEDITOR_BROWSE_SHOW_DIRS = True
 #####################
+
+# Email
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DJANGO_SETTINGS_MODULE = os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'magaz.settings')
+
+GRAPPELLI_ADMIN_TITLE = '''El'Market Admin Panel'''
+
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -144,6 +157,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # корзина пользователя
 CART_SESSION_ID = 'cart'
 
-TEMPLATE_CONTEXT_PROCESSORS += (
-    'django.core.context_processors.request',
-)
+#TEMPLATE_CONTEXT_PROCESSORS += (
+#    'django.core.context_processors.request',
+#)

@@ -28,16 +28,16 @@
             </td>
             <td>
               <form action="{% url "cart:CartAdd" product.id %}" method="post">
-                <div id="">
 
-                {{ item.update_quantity_form.quantity }}
-                {{ item.update_quantity_form.update }}
-                {% csrf_token %}
-                <input type="submit" type="hidden" id="buttonBuy1" value="Обновить">
-                <label class="" for="buttonBuy1">
-                  Обновить
-                </label>
-                </div>
+                  <input class="file-path validate" type="submit" id="buttonBuy" value="Обновить">
+                  {{ item.update_quantity_form.quantity }}
+                  {{ item.update_quantity_form.update }}
+                  {% csrf_token %}
+
+                  <label class="label" for="buttonBuy">
+                    Обновить
+                  </label>
+
               </form>
             </td>
             <td>
