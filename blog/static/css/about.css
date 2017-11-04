@@ -47,7 +47,7 @@ body {
 
 /*-------div категорий-------*/
 #catalogNav{
-  z-index: 997;
+  z-index: 10;
   position: fixed;
   width: 100%;
   padding: 15px 0px;
@@ -110,7 +110,7 @@ body {
   width: 560px;
 }
 #sidenav-overlay{
-  z-index: 0 !important;
+  z-index: 996 !important;
 }
 
 
@@ -232,6 +232,9 @@ body {
 .full-width{
   width: 100% !important;
 }
+.float-none{
+  float: none !important;
+}
 .defoult-bg{
   background-color: rgb(33,37,41) !important;
 }
@@ -242,12 +245,20 @@ body {
   color: rgba(255, 171, 64, 1);
 }
 .center{
-  margin: 0px auto;
+  margin: 0px auto !important;
+}
+.inline-block{
+  display: block !important;
 }
 #id_quantity{
   width: 50px !important;
   height: 30px !important;
   display: inline-block !important;
+}
+
+.vcenter{
+  float: none !important;
+  vertical-align: middle !important;
 }
 
 .label{
@@ -262,6 +273,12 @@ body {
 
 
 @media screen and (max-height: 665px) and (max-width: 710px){
+  .full-width-device{
+    width: 100% !important;
+  }
+  .third-width-device{
+    width: 33.33333% !important;
+  }
   .news-conteiner{
     width: 100%;
     margin: 0 auto;
@@ -300,5 +317,9 @@ body {
     position: static;
     margin-right: 0 !important;
     float: none !important;
+  }
+
+  .endless_more{
+    max-width: 94%;
   }
 }
