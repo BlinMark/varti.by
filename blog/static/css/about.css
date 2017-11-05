@@ -244,6 +244,9 @@ body {
 .color-orange{
   color: rgba(255, 171, 64, 1);
 }
+.bg-color-red{
+  background-color: rgb(128, 24, 24) !important;
+}
 .center{
   margin: 0px auto !important;
 }

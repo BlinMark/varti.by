@@ -1,10 +1,19 @@
-﻿{% extends "blog/base.html" %}
+﻿{% extends "blog/new-base.html" %}
 
 {% block title %}
   Спасибо за заказ
 {% endblock %}
 
 {% block content %}
-  <h1>Спасибо за заказ</h1>
-  <p>Идентификатор вашего заказа: {{ order.id }}</p>
+<div class="row">
+	<div class="col s12 m6 center float-none">
+    <div class="card defoult-bg darken-1">
+      <div class="card-content white-text">
+        <span class="card-title center">Спасибо за заказ</span>
+        <p>Номер вашего заказа: {{ order.id }}<br>
+        Копия чека отправлена на вашу электронную почту</p>
+      </div>
+    </div>
+	</div>
+</div>
 {% endblock %}

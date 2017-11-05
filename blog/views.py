@@ -76,3 +76,10 @@ def ProductDetail(request, id, slug):
                    'cart_product_form': cart_product_form,
                    'form': form})
 
+
+def admin(request):
+    if auth.get_user(reuest).is_authenticated:
+        return redirect('/admin')
+    else:
+        pass
+
