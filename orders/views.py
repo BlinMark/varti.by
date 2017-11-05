@@ -19,7 +19,7 @@ def OrderCreate(request):
             cart.clear()
 
             # Асинхронная отправка сообщения
-            OrderCreated.delay(order.id)
+            # OrderCreated.delay(order.id)
 
             return render(request, 'orders/order/created.html', {'order': order})
 

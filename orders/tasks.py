@@ -3,7 +3,7 @@ from django.core.mail import send_mail
 from .models import Order
 
 
-@task
+# @task
 def OrderCreated(order_id):
     """
     Отправка Email сообщения о создании покупке
