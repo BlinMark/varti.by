@@ -4,6 +4,7 @@ from .models import Post
 from .models import Category, Product
 from cart.forms import CartAddProductForm
 from .forms import OrderCreateForm
+from django.contrib.auth.models import User
 
 
 # Страница всех новостей
@@ -79,7 +80,7 @@ def ProductDetail(request, id, slug):
 
 def admin(request):
     if auth.get_user(reuest).is_authenticated:
-        return redirect('/admin')
+        return redirect('/admin/')
     else:
-        pass
+        return redirect('/admin/login/?next=/admin/')
 
