@@ -7,7 +7,7 @@
 <div class="row">
 	<div class="col s12 m6 center float-none">
 		<form class="col s12" id="order" action="." method="post">
-			<div class="card defoult-bg darken-1">
+			<div class="card defoult-bg darken-1"  id="submitButtons">
 				<div class="card-content white-text">
 					<span class="card-title center">Personal data</span>
 					<div class="row">
@@ -16,7 +16,7 @@
 		          <label for="first_name">Name</label>
 		        </div>
 		        <div class="input-field col s4 full-width-device">
-		          {% render_field form.phone type="text" class+="validate" id="phone" %}
+		          {% render_field form.phone type="tel" class+="validate" id="phone" %}
 		          <label for="phone">Phone</label>
 		        </div>
 						<div class="input-field col s4 full-width-device">
@@ -46,7 +46,7 @@
 				</div>
 				{% csrf_token %}
 				<input type="submit" form="order" id="preorderButton" value="Подтвердить заказ">
-				<label id="preorderButtonLabel" for="preorderButton">
+				<label id="preorderButtonLabel" class="waves-effect waves-light btn red darken-2" for="preorderButton">
 					Подтвердить заказ
 				</label>
 				<br><br>

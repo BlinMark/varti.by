@@ -16,12 +16,7 @@ import os
 from django.conf.global_settings import TEMPLATES
 
 
-#TEMPLATES[0]['OPTIONS']['context_processors'].insert(0, 'django.core.context_processors.request')
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '@4-@fls*2=3l0@ksdldv)=swd6ueti)6p5%e^4z&71*z_ahs1q'
@@ -29,16 +24,13 @@ SECRET_KEY = '@4-@fls*2=3l0@ksdldv)=swd6ueti)6p5%e^4z&71*z_ahs1q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# DEBUG404 = True
-
-
 ALLOWED_HOSTS = ['127.0.0.1']
 
-# Application definition
 
+# Application definition
 INSTALLED_APPS = (
     # 'django_admin_bootstrapped',  # новая админка
-    'grappelli',  # админка
+    'magaz.apps.SuitConfig',
     'django.contrib.admin',
     'ckeditor',  # текстовый редактор
     'ckeditor_uploader',
@@ -55,7 +47,7 @@ INSTALLED_APPS = (
     'el_pagination',
 )
 
-GOOGLE_TAG_ID = 'GTM-WBVQW6L'
+GOOGLE_TAG_ID = 'GTM-N64PZ92'
 # Редактор текста
 #####################
 # Зависимость визуального редактора
@@ -66,7 +58,7 @@ CKEDITOR_IMAGE_BACKEND = 'pillow'
 CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': 'basic',
-        'height': 500,
+        'height': 250,
         'width': 900,
         # 'extraPlugins':'codesnippet',
     },
@@ -92,7 +84,7 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 DJANGO_SETTINGS_MODULE = os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'magaz.settings')
 
-GRAPPELLI_ADMIN_TITLE = '''El'Market Admin Panel'''
+#GRAPPELLI_ADMIN_TITLE = '''El'Market Admin Panel'''
 
 
 MIDDLEWARE_CLASSES = (

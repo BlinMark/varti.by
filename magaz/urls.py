@@ -4,7 +4,6 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-    url(r'^grappelli/', include('grappelli.urls')),   # grappelli URLS
     url(r'^admin/', include(admin.site.urls)),
     url(r'^cart/', include('cart.urls', namespace='cart')),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),

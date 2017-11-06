@@ -37,8 +37,8 @@ class OrderAdmin(admin.ModelAdmin):
                     ]
 
 
-admin.site.register(Order, OrderAdmin)
+# admin.site.register(Order, OrderAdmin)
 admin.site.register(Category, CategoryAdmin)
-#admin.site.register(Author, AuthorAdmin)
+# admin.site.register(Author, AuthorAdmin)
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Post)

@@ -149,91 +149,32 @@ body {
 /*-------------------------------------------------------------------*/
 
 
-/*---------Кнопка "Добавить в корзину" и "Вернуться назад"-----------*/
-#submitButtons{
-	width: 200px;
-	height: 40px;
-  float: right;
-}
 #submitButtons input[type="submit"]{
 	display: none;
 }
-.submitButtonLabel{
-  padding-top: 14px;
-	display: inline-block;
-  font-size: 12px;
-	line-height: 12px;
-	font-weight: 700;
-	text-transform: uppercase;
-	text-align: center;
-	border-radius: 3px;
-}
 
-#submitButtons label[for="buttonBuy"]{
-  cursor: pointer;
-	color: #fff;
-	background: rgb(33,37,41);
-	height: 40px;
-	width: 200px;
-	transition: .3s;
-	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-#submitButtons label[for="buttonBuy"]:hover{
-  background: rgba(33,37,41,0.95);
-	box-shadow: 0 10px 30px rgba(0,0,0,.2);
-	text-shadow: 0 0 10px rgba(255,255,255,.2);
-	transition: .5s;
-  animation: none;
-}
 .noView{
   display: none;
 }
 .card-product{
-  width: 80vw;
+  width: 65vw;
   margin: 0px auto !important;
 }
-
 .price-align{
   position: absolute;
   right: 10px;
   top: 8px;
   font-weight: 700;
 }
-/*-------------------------------------------------------------------*/
 
-
-/*------------------------------кнопка-------------------------------*/
-.button{
-  top: 16px;
-  position: absolute;
-  display: inline-block;
-	color: white !important;
-	padding-top: 14px;
-	width: 200px;
-	height: 40px;
-	font-size: 12px;
-	line-height: 12px;
-	font-weight: 700;
-	text-transform: uppercase;
-	text-decoration: none;
-	text-align: center;
-	background: rgb(33,37,41);
-	transition: .3s !important;
-	border-radius: 3px;
-}
-.button:hover{
-  background: rgba(33,37,41,0.95);
-	box-shadow: 0 10px 30px rgba(0,0,0,.2);
-	text-shadow: 0 0 10px rgba(255,255,255,.2);
-	transition: .5s;
-  animation: none;
-}
-/*-------------------------------------------------------------------*/
 .full-width{
   width: 100% !important;
 }
 .float-none{
   float: none !important;
+}
+.float-right{
+  float: right !important;
 }
 .defoult-bg{
   background-color: rgb(33,37,41) !important;

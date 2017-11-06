@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-class BlogConfig(AppConfig):
-    name = 'blog'
-    verbose_name = u"Varti"
-    
+class BlogAppConfig(AppConfig):
+    name = "blog"
+    verbose_name = u"El'Market"
+
