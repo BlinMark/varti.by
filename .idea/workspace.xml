@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3edf51f3-b71e-4c1b-a343-bc1b62db3a34" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtualenv/Lib/site-packages/Django-1.8.17.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtualenv/Lib/site-packages/Django-1.8.17.dist-info/INSTALLER" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtualenv/Lib/site-packages/Django-1.8.17.dist-info/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtualenv/Lib/site-packages/Django-1.8.17.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtualenv/Lib/site-packages/Django-1.8.17.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtualenv/Lib/site-packages/Django-1.8.17.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtualenv/Lib/site-packages/Django-1.8.17.dist-info/entry_points.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtualenv/Lib/site-packages/Django-1.8.17.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtualenv/Lib/site-packages/Django-1.8.17.dist-info/top_level.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/__init__.py" afterPath="$PROJECT_DIR$/blog/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/admin.py" afterPath="$PROJECT_DIR$/blog/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/apps.py" afterPath="$PROJECT_DIR$/blog/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/css/about.css" afterPath="$PROJECT_DIR$/blog/static/css/about.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/base_product.html" afterPath="$PROJECT_DIR$/blog/templates/blog/base_product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/index.html" afterPath="$PROJECT_DIR$/blog/templates/blog/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/new-base.html" afterPath="$PROJECT_DIR$/blog/templates/blog/new-base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart/forms.py" afterPath="$PROJECT_DIR$/cart/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart/templates/cart/detail.html" afterPath="$PROJECT_DIR$/cart/templates/cart/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magaz/apps.py" afterPath="$PROJECT_DIR$/magaz/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magaz/settings.py" afterPath="$PROJECT_DIR$/magaz/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/magaz/urls.py" afterPath="$PROJECT_DIR$/magaz/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orders/templates/orders/order/create.html" afterPath="$PROJECT_DIR$/orders/templates/orders/order/create.html" />
-    </list>
+    <list default="true" id="3edf51f3-b71e-4c1b-a343-bc1b62db3a34" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +18,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/magaz/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
+            <state relative-caret-position="986">
               <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
               <folding />
             </state>
@@ -915,7 +890,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/magaz/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="986">
           <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
           <folding />
         </state>
